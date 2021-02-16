@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-alert-example',
+  selector: 'vb-antd-alert-example',
   templateUrl: './alert.component.html',
 })
 export class KitAntdAlertExampleComponent {}

@@ -90,7 +90,7 @@ const COUNTRIES: Country[] = [
 ]
 
 @Component({
-  selector: 'kit-bootstrap-table-pagination',
+  selector: 'vb-bootstrap-table-pagination',
   templateUrl: './pagination.component.html',
 })
 export class BootstrapTablePaginationComponent {

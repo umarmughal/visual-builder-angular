@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-table-filter',
+  selector: 'vb-antd-table-filter',
   templateUrl: './filter.component.html',
 })
 export class KitAntdTableFilterComponent implements OnInit {

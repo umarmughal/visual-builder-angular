@@ -1,8 +1,5 @@
 @import 'src/mixins.scss';
 
-/////////////////////////////////////////////////////////////////////////////////////////
-/*  "MEASUREMENTS" STYLES */
-
 // font size
 .font-size {
   &-0 {
@@ -17,8 +14,14 @@
   &-14 {
     font-size: rem(14);
   }
+  &-15 {
+    font-size: rem(15);
+  }
   &-16 {
     font-size: rem(16);
+  }
+  &-17 {
+    font-size: rem(17);
   }
   &-18 {
     font-size: rem(18);

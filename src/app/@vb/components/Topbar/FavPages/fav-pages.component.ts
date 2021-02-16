@@ -4,7 +4,7 @@ import { NzMessageService } from 'ng-zorro-antd/message'
 import { MenuService } from 'src/app/services/menu'
 
 @Component({
-  selector: 'cui-topbar-fav-pages',
+  selector: 'vb-topbar-fav-pages',
   templateUrl: './fav-pages.component.html',
   styleUrls: ['./fav-pages.component.scss'],
 })

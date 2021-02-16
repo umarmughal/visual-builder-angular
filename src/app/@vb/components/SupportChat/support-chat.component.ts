@@ -4,7 +4,7 @@ import * as SettingsActions from 'src/app/store/settings/actions'
 import * as Reducers from 'src/app/store/reducers'
 
 @Component({
-  selector: 'cui-support-chat',
+  selector: 'vb-support-chat',
   templateUrl: './support-chat.component.html',
   styleUrls: ['./support-chat.component.scss'],
 })

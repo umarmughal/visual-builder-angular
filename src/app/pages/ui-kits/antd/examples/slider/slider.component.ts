@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-slider-example',
+  selector: 'vb-antd-slider-example',
   templateUrl: './slider.component.html',
 })
 export class KitAntdSliderExampleComponent {

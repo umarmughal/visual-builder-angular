@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-backtop-example',
+  selector: 'vb-antd-backtop-example',
   templateUrl: './backtop.component.html',
   styles: [
     `

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-table-fixed-all',
+  selector: 'vb-antd-table-fixed-all',
   templateUrl: './fixed-all.component.html',
 })
 export class KitAntdTableFixedAllComponent implements OnInit {

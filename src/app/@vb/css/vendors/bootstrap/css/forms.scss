@@ -3,8 +3,8 @@
 /////////////////////////////////////////////////////////////////////////////////////////
 /* FORMS */
 
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
+input::-webvb-input-placeholder,
+textarea::-webvb-input-placeholder {
   color: $gray-5 !important;
 }
 
@@ -30,7 +30,6 @@ textarea:-ms-input-placeholder {
 }
 
 .form-control {
-  font-family: $base-font-family;
   border-color: $border;
   color: $text;
   &.form-control-rounded {
@@ -124,8 +123,8 @@ span.input-group-addon {
 }
 
 // dark theme
-[data-kit-theme='dark'] {
-  input::-webkit-input-placeholder {
+[data-vb-theme='dark'] {
+  input::-webvb-input-placeholder {
     color: $dark-gray-3 !important;
   }
 

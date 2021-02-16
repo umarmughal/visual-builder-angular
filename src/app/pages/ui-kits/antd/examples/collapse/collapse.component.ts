@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-collapse-example',
+  selector: 'vb-antd-collapse-example',
   templateUrl: './collapse.component.html',
 })
 export class KitAntdCollapseExampleComponent {

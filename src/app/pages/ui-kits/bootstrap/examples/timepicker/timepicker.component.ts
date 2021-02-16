@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'kit-bootstrap-timepicker-example',
+  selector: 'vb-bootstrap-timepicker-example',
   templateUrl: './timepicker.component.html',
 })
 export class KitBootstrapTimepickerExampleComponent implements OnInit {

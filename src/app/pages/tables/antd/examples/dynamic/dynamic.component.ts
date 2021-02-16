@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-table-dynamic',
+  selector: 'vb-antd-table-dynamic',
   templateUrl: './dynamic.component.html',
   styles: [
     `

@@ -31,7 +31,7 @@
 }
 
 // dark theme
-:host-context([data-kit-theme='dark']) {
+:host-context([data-vb-theme='dark']) {
   .category {
     &:hover,
     &.current {

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-table-row-selection',
+  selector: 'vb-antd-table-row-selection',
   templateUrl: './row-selection.component.html',
   styles: [
     `

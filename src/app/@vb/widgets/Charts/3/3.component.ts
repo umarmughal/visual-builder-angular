@@ -4,11 +4,11 @@ declare var require: any
 const data: any = require('./data.json')
 
 @Component({
-  selector: 'kit-chart-3',
+  selector: 'vb-chart-3',
   templateUrl: './3.component.html',
   styleUrls: ['./3.component.scss'],
 })
-export class CuiChart3Component implements OnInit {
+export class VbChart3Component implements OnInit {
   chartData = data
   chartOptions = {
     low: 0,

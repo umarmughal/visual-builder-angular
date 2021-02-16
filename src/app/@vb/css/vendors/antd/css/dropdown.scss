@@ -1,21 +1,17 @@
 // Import mixins
 @import 'src/mixins.scss';
 
-.ant-dropdown {
-  color: $gray-6;
-}
-
 .ant-dropdown-menu-item-group-list {
-  margin: 0;
-  list-style: none;
-  padding: 0;
+  margin: 0 !important;
+  list-style: none !important;
+  padding: 0 !important;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 // DARK THEME STYLES
-[data-kit-theme='dark'] {
+[data-vb-theme='dark'] {
   .ant-dropdown-menu-item-group-title {
-    color: darken($dark-gray-3, 8%) !important;
+    color: $dark-gray-2 !important;
   }
   .ant-select-dropdown {
     &-menu-item-selected {

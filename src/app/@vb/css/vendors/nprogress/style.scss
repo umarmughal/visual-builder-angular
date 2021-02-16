@@ -29,7 +29,7 @@
   box-shadow: 0 0 10px #29d, 0 0 5px #29d;
   opacity: 1;
 
-  -webkit-transform: rotate(3deg) translate(0, -4px);
+  -webvb-transform: rotate(3deg) translate(0, -4px);
   -ms-transform: rotate(3deg) translate(0, -4px);
   transform: rotate(3deg) translate(0, -4px);
 }
@@ -67,7 +67,7 @@
   border-left-color: $primary;
   border-radius: 50%;
 
-  -webkit-animation: nprogress-spinner 400ms linear infinite;
+  -webvb-animation: nprogress-spinner 400ms linear infinite;
   animation: nprogress-spinner 400ms linear infinite;
 }
 
@@ -81,12 +81,12 @@
   position: absolute;
 }
 
-@-webkit-keyframes nprogress-spinner {
+@-webvb-keyframes nprogress-spinner {
   0% {
-    -webkit-transform: rotate(0deg);
+    -webvb-transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
+    -webvb-transform: rotate(360deg);
   }
 }
 @keyframes nprogress-spinner {
@@ -99,7 +99,7 @@
 }
 
 // dark theme
-[data-kit-theme='dark'] {
+[data-vb-theme='dark'] {
   #nprogress {
     .spinner {
       color: $white;

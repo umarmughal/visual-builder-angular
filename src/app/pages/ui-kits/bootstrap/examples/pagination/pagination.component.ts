@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'kit-bootstrap-pagination-example',
+  selector: 'vb-bootstrap-pagination-example',
   templateUrl: './pagination.component.html',
 })
 export class KitBootstrapPaginationExampleComponent implements OnInit {

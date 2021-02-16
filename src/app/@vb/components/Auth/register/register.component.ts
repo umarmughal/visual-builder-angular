@@ -6,7 +6,7 @@ import * as UserActions from 'src/app/store/user/actions'
 import * as SettingsActions from 'src/app/store/settings/actions'
 
 @Component({
-  selector: 'cui-system-register',
+  selector: 'vb-system-register',
   templateUrl: './register.component.html',
   styleUrls: ['../style.component.scss'],
 })

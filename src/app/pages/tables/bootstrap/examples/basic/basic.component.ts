@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'kit-bootstrap-table-basic',
+  selector: 'vb-bootstrap-table-basic',
   templateUrl: './basic.component.html',
 })
 export class BootstrapTableBasicComponent implements OnInit {

@@ -3,7 +3,7 @@ import { getISOWeek } from 'date-fns'
 import { en_US, zh_CN, NzI18nService } from 'ng-zorro-antd/i18n'
 
 @Component({
-  selector: 'kit-antd-datepicker-example',
+  selector: 'vb-antd-datepicker-example',
   templateUrl: './datepicker.component.html',
 })
 export class KitAntdDatePickerExampleComponent {

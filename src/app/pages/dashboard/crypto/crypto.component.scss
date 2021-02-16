@@ -1,6 +1,6 @@
 @import 'src/mixins.scss';
 
-.cui-crypto-dashboard {
+.vb-crypto-dashboard {
   &-container {
     display: flex;
     flex-direction: row;
@@ -43,7 +43,7 @@
 
     ::ng-deep {
       @at-root {
-        .cui__layout__grayBackground .cui-crypto-dashboard-list-item {
+        .vb__layout__grayBackground .vb-crypto-dashboard-list-item {
           background: $white;
         }
       }
@@ -52,7 +52,7 @@
     &:hover {
       background: $primary;
       color: $white;
-      .cui-crypto-dashboard-list-percents {
+      .vb-crypto-dashboard-list-percents {
         span {
           color: $white !important;
         }
@@ -67,7 +67,7 @@
   }
 
   &-list-item-negative {
-    .cui-crypto-dashboard-list-percents {
+    .vb-crypto-dashboard-list-percents {
       span {
         color: #f75535;
         &:after {
@@ -174,8 +174,8 @@
 }
 
 // dark theme
-[data-kit-theme='dark'] {
-  .cui-crypto-dashboard {
+[data-vb-theme='dark'] {
+  .vb-crypto-dashboard {
     &-list-item {
       background: $dark-gray-4 !important;
 

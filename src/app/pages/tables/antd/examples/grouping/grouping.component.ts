@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-table-grouping',
+  selector: 'vb-antd-table-grouping',
   templateUrl: './grouping.component.html',
 })
 export class KitAntdTableGroupingComponent implements OnInit {

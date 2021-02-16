@@ -4,11 +4,11 @@ declare var require: any
 const data: any = require('./data.json')
 
 @Component({
-  selector: 'kit-chart-10',
+  selector: 'vb-chart-10',
   templateUrl: './10.component.html',
   styleUrls: ['./10.component.scss'],
 })
-export class CuiChart10Component implements AfterViewChecked {
+export class VbChart10Component implements AfterViewChecked {
   @ViewChild(ChartComponent) chart: ChartComponent
   @ViewChild('tooltip') tooltip
   @ViewChild('tooltipLabel') tooltipLabel

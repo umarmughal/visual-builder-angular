@@ -2,9 +2,13 @@
 @import 'src/mixins.scss';
 
 .ant-layout {
-  min-height: 100vh !important;
   min-width: 0;
   background: transparent;
+}
+
+.ant-layout-sider-children {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 .ant-layout-header {

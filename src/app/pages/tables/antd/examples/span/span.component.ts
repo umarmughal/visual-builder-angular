@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-table-span',
+  selector: 'vb-antd-table-span',
   templateUrl: './span.component.html',
 })
 export class KitAntdTableSpanComponent implements OnInit {

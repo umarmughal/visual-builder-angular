@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-drawer-example',
+  selector: 'vb-antd-drawer-example',
   templateUrl: './drawer.component.html',
 })
 export class KitAntdDrawerExampleComponent {

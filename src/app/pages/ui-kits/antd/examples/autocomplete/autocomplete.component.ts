@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-autocomplete-example',
+  selector: 'vb-antd-autocomplete-example',
   templateUrl: './autocomplete.component.html',
 })
 export class KitAntdAutoCompleteExampleComponent {

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-timepicker-example',
+  selector: 'vb-antd-timepicker-example',
   templateUrl: './timepicker.component.html',
 })
 export class KitAntdTimePickerExampleComponent {

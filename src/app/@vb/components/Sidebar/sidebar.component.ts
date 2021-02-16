@@ -5,80 +5,52 @@ import * as SettingsActions from 'src/app/store/settings/actions'
 import * as Reducers from 'src/app/store/reducers'
 
 @Component({
-  selector: 'cui-sidebar',
+  selector: 'vb-sidebar',
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.scss'],
 })
 export class SidebarComponent {
-  isSidebarOpen: boolean
-  isMenuCollapsed: boolean
-  isMenuShadow: boolean
-  isMenuUnfixed: boolean
-  menuLayoutType: string
-  menuColor: string
-  flyoutMenuColor: string
-  systemLayoutColor: string
-  isTopbarFixed: boolean
-  isFooterDark: boolean
-  isContentMaxWidth: boolean
-  isAppMaxWidth: boolean
-  isGrayBackground: boolean
-  isGrayTopbar: boolean
-  isCardShadow: boolean
-  isSquaredBorders: boolean
-  isBorderless: boolean
-  routerAnimation: string
-  locale: string
-  leftMenuWidth: Number
-  logo: string
-  authPagesColor: string
-  theme: string
-  primaryColor: string
+  settings: any = {}
+  theme: any
 
   defaultColor = '#4b7cf3'
   window: any = window as any
 
   constructor(private store: Store<any>) {
     this.store.pipe(select(Reducers.getSettings)).subscribe(state => {
-      this.isSidebarOpen = state.isSidebarOpen
-      this.isMenuCollapsed = state.isMenuCollapsed
-      this.isMenuShadow = state.isMenuShadow
-      this.isMenuUnfixed = state.isMenuUnfixed
-      this.menuLayoutType = state.menuLayoutType
-      this.menuColor = state.menuColor
-      this.flyoutMenuColor = state.flyoutMenuColor
-      this.systemLayoutColor = state.systemLayoutColor
-      this.isTopbarFixed = state.isTopbarFixed
-      this.isFooterDark = state.isFooterDark
-      this.isContentMaxWidth = state.isContentMaxWidth
-      this.isAppMaxWidth = state.isAppMaxWidth
-      this.isGrayBackground = state.isGrayBackground
-      this.isGrayTopbar = state.isGrayTopbar
-      this.isCardShadow = state.isCardShadow
-      this.isSquaredBorders = state.isSquaredBorders
-      this.isBorderless = state.isBorderless
-      this.routerAnimation = state.routerAnimation
-      this.locale = state.locale
-      this.leftMenuWidth = state.leftMenuWidth
-      this.logo = state.logo
-      this.authPagesColor = state.authPagesColor
-      this.theme = state.theme
-      this.primaryColor = state.primaryColor
+      this.settings = state
+      this.theme = state.theme === 'dark'
     })
   }
 
-  toggle() {
+  toggleSettings() {
     this.store.dispatch(
       new SettingsActions.SetStateAction({
-        isSidebarOpen: !this.isSidebarOpen,
+        isSidebarOpen: !this.settings.isSidebarOpen,
       }),
     )
   }
 
-  settingChange(value: boolean, setting: string) {
+  togglePreselectedThemes() {
+    this.store.dispatch(
+      new SettingsActions.SetStateAction({
+        isSidebarOpen: !this.settings.isSidebarOpen,
+      }),
+    )
+  }
+
+  settingChange(value, setting) {
     this.store.dispatch(
       new SettingsActions.SetStateAction({
         [setting]: value,
+      }),
+    )
+  }
+
+  settingChangeTheme(value, setting) {
+    this.store.dispatch(
+      new SettingsActions.SetStateAction({
+        [setting]: value ? 'dark' : 'default',
       }),
     )
   }
@@ -108,7 +80,7 @@ export class SidebarComponent {
       }
       const body = document.querySelector('body')
       const styleEl = document.createElement('style')
-      const css = document.createTextNode(`:root { --kit-color-primary: ${color};}`)
+      const css = document.createTextNode(`:root { --vb-color-primary: ${color};}`)
       styleEl.setAttribute('id', 'primaryColor')
       styleEl.appendChild(css)
       body.appendChild(styleEl)

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-mention-example',
+  selector: 'vb-antd-mention-example',
   templateUrl: './mention.component.html',
 })
 export class KitAntdMentionExampleComponent {

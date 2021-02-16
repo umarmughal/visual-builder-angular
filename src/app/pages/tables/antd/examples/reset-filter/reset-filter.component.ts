@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-table-reset-filter',
+  selector: 'vb-antd-table-reset-filter',
   templateUrl: './reset-filter.component.html',
   styles: [
     `

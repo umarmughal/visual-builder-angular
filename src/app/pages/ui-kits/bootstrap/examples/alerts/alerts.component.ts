@@ -41,7 +41,7 @@ const ALERTS: Alert[] = [
 ]
 
 @Component({
-  selector: 'kit-bootstrap-alerts-example',
+  selector: 'vb-bootstrap-alerts-example',
   templateUrl: './alerts.component.html',
 })
 export class KitBootstrapAlertsExampleComponent {

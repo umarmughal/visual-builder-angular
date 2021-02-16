@@ -2,7 +2,7 @@ import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core'
 import { NzFormatEmitEvent, NzTreeNodeOptions, NzTreeComponent } from 'ng-zorro-antd/tree'
 
 @Component({
-  selector: 'kit-antd-tree-example',
+  selector: 'vb-antd-tree-example',
   templateUrl: './tree.component.html',
 })
 export class KitAntdTreeExampleComponent implements OnInit, AfterViewInit {

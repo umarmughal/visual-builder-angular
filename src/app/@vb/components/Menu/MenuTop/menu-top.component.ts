@@ -8,7 +8,7 @@ import * as SettingsActions from 'src/app/store/settings/actions'
 import * as Reducers from 'src/app/store/reducers'
 
 @Component({
-  selector: 'cui-menu-top',
+  selector: 'vb-menu-top',
   templateUrl: './menu-top.component.html',
   styleUrls: ['./menu-top.component.scss'],
 })

@@ -3,7 +3,7 @@ declare var require: any
 const data: any = require('./data.json')
 
 @Component({
-  selector: 'kit-ui-kit-antd',
+  selector: 'vb-ui-vb-antd',
   templateUrl: './antd.component.html',
 })
 export class UiKitAntdComponent implements OnInit {

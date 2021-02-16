@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-list-example',
+  selector: 'vb-antd-list-example',
   templateUrl: './list.component.html',
 })
 export class KitAntdListExampleComponent {

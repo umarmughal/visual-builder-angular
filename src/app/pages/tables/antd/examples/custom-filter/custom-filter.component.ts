@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-table-custom-filter',
+  selector: 'vb-antd-table-custom-filter',
   templateUrl: './custom-filter.component.html',
   styles: [
     `

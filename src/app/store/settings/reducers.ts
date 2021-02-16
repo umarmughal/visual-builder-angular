@@ -11,26 +11,32 @@ const STORED_SETTINGS = (storedSettings: object) => {
 }
 
 export const initialState: object = {
-  // default settings, if not exist in localStorage
   ...STORED_SETTINGS({
-    authProvider: 'firebase', // firebase, jwt
-    logo: 'Clean UI Pro',
+    // Read docs for available values: https://docs.visualbuilder.cloud
+    // VB:REPLACE-START:SETTINGS
+    authProvider: 'jwt',
+    logo: 'Visual Builder',
+    version: 'fluent',
+    theme: 'default',
     locale: 'en-US',
     isSidebarOpen: false,
     isSupportChatOpen: false,
     isMobileView: false,
     isMobileMenuOpen: false,
     isMenuCollapsed: false,
-    menuLayoutType: 'left', // left, top, nomenu
-    routerAnimation: 'slideFadeinUp', // none, slideFadeinUp, slideFadeinRight, Fadein, zoomFadein
-    menuColor: 'white', // white, dark, gray
-    theme: 'default', // default, dark
-    authPagesColor: 'white', // white, gray, image
+    isPreselectedOpen: false,
+    preselectedVariant: 'default',
+    menuLayoutType: 'left',
+    routerAnimation: 'slide-fadein-up',
+    menuColor: 'gray',
+    authPagesColor: 'gray',
+    isAuthTopbar: true,
     primaryColor: '#4b7cf3',
     leftMenuWidth: 256,
     isMenuUnfixed: false,
     isMenuShadow: false,
     isTopbarFixed: false,
+    isTopbarSeparated: false,
     isGrayTopbar: false,
     isContentMaxWidth: false,
     isAppMaxWidth: false,
@@ -38,6 +44,14 @@ export const initialState: object = {
     isCardShadow: true,
     isSquaredBorders: false,
     isBorderless: false,
+    layoutMenu: 'classic',
+    layoutTopbar: 'v1',
+    layoutBreadcrumbs: 'v1',
+    layoutFooter: 'v1',
+    flyoutMenuType: 'flyout',
+    flyoutMenuColor: 'blue',
+
+    // VB:REPLACE-END:SETTINGS
   }),
 }
 

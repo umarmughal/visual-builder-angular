@@ -1,26 +1,22 @@
 @import 'src/mixins.scss';
 
-/////////////////////////////////////////////////////////////////////////////////////////
-/*  "CORE" STYLES */
-
 :root {
-  --kit-color-primary: #4b7cf3;
-  --kit-font-family: 'Mukta', sans-serif;
+  --vb-color-primary: #4b7cf3;
 }
 
 html {
-  font-size: 15px;
+  font-size: 14px;
   @media (max-width: $sm-max-width) {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
 body {
   font-size: 1rem;
   line-height: 1.5;
-  font-family: $base-font-family;
+  font-family: $base-font;
   color: $text;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   position: relative;
   font-variant: normal;
   font-feature-settings: normal;
@@ -40,7 +36,7 @@ a {
 
 input {
   outline: none !important;
-  font-family: $base-font-family;
+  font-family: $base-font;
   color: $text;
 }
 
@@ -71,26 +67,20 @@ svg {
   overflow: auto;
 }
 
-.badge-example {
-  font-size: rem(14);
-  text-transform: uppercase;
-  margin-bottom: rem(15);
-  background: $gray-2;
-  color: $black;
-  display: inline-block;
-  padding: rem(3) rem(6);
-  border-radius: 4px;
+b,
+strong {
+  font-weight: 700;
+}
+
+::placeholder {
+  color: $gray-2;
 }
 
 // dark theme
-[data-kit-theme='dark'] {
+[data-vb-theme='dark'] {
   body {
     background: $dark-gray-5;
     color: $dark-gray-1;
-
-    .badge-example {
-      background: $dark-gray-4;
-    }
   }
 
   h1,
@@ -110,5 +100,9 @@ svg {
       color: $blue;
       text-decoration: none;
     }
+  }
+
+  ::placeholder {
+    color: $dark-gray-3;
   }
 }

@@ -1,7 +1,7 @@
 import { Component, ViewChild, ElementRef } from '@angular/core'
 
 @Component({
-  selector: 'cui-topbar-search',
+  selector: 'vb-topbar-search',
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.scss'],
 })

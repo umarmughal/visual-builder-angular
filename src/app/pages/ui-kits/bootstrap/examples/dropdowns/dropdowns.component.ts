@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'kit-bootstrap-dropdowns-example',
+  selector: 'vb-bootstrap-dropdowns-example',
   templateUrl: './dropdowns.component.html',
 })
 export class KitBootstrapDropdownsExampleComponent implements OnInit {

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-table-size',
+  selector: 'vb-antd-table-size',
   templateUrl: './size.component.html',
 })
 export class KitAntdTableSizeComponent implements OnInit {

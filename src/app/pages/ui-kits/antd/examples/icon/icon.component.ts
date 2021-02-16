@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-icon-example',
+  selector: 'vb-antd-icon-example',
   templateUrl: './icon.component.html',
 })
 export class KitAntdIconExampleComponent {}

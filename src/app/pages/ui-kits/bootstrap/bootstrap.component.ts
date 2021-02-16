@@ -3,7 +3,7 @@ declare var require: any
 const data: any = require('./data.json')
 
 @Component({
-  selector: 'kit-ui-kit-bootstrap',
+  selector: 'vb-ui-vb-bootstrap',
   templateUrl: './bootstrap.component.html',
 })
 export class UiKitBootstrapComponent implements OnInit {

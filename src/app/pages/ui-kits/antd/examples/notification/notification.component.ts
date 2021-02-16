@@ -2,7 +2,7 @@ import { Component } from '@angular/core'
 import { NzNotificationService } from 'ng-zorro-antd/notification'
 
 @Component({
-  selector: 'kit-antd-notification-example',
+  selector: 'vb-antd-notification-example',
   templateUrl: './notification.component.html',
 })
 export class KitAntdNotificationExampleComponent {

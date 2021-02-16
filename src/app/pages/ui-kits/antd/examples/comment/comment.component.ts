@@ -2,7 +2,7 @@ import { Component } from '@angular/core'
 import { formatDistance } from 'date-fns'
 
 @Component({
-  selector: 'kit-antd-comment-example',
+  selector: 'vb-antd-comment-example',
   templateUrl: './comment.component.html',
 })
 export class KitAntdCommentExampleComponent {

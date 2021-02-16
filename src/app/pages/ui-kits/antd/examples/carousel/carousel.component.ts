@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-carousel-example',
+  selector: 'vb-antd-carousel-example',
   templateUrl: './carousel.component.html',
 })
 export class KitAntdCarouselExampleComponent {

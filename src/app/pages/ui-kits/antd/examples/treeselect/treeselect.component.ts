@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-treeselect-example',
+  selector: 'vb-antd-treeselect-example',
   templateUrl: './treeselect.component.html',
 })
 export class KitAntdTreeSelectExampleComponent implements OnInit {

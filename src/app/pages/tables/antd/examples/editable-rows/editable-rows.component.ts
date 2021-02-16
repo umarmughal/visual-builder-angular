@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-table-editable-rows',
+  selector: 'vb-antd-table-editable-rows',
   templateUrl: './editable-rows.component.html',
   styles: [
     `

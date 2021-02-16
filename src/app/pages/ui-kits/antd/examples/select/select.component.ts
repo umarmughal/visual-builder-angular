@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-select-example',
+  selector: 'vb-antd-select-example',
   templateUrl: './select.component.html',
 })
 export class KitAntdSelectExampleComponent implements OnInit {

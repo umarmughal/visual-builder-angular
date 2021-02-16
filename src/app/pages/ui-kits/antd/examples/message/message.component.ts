@@ -2,7 +2,7 @@ import { Component } from '@angular/core'
 import { NzMessageService } from 'ng-zorro-antd/message'
 
 @Component({
-  selector: 'kit-antd-message-example',
+  selector: 'vb-antd-message-example',
   templateUrl: './message.component.html',
 })
 export class KitAntdMessageExampleComponent {

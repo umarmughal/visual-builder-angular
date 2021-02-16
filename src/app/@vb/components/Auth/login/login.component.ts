@@ -6,7 +6,7 @@ import * as UserActions from 'src/app/store/user/actions'
 import * as SettingsActions from 'src/app/store/settings/actions'
 
 @Component({
-  selector: 'cui-system-login',
+  selector: 'vb-system-login',
   templateUrl: './login.component.html',
   styleUrls: ['../style.component.scss'],
 })

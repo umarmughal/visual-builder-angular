@@ -1,23 +1,23 @@
 <div [ngClass]="{
-  'cui__layout__grayBackground': isGrayBackground
+  'vb__layout__grayBackground': isGrayBackground
 }">
   <nz-layout [ngClass]="{
-  'cui__layout__contentMaxWidth': isContentMaxWidth,
-  'cui__layout__appMaxWidth': isAppMaxWidth,
-  'cui__layout__grayBackground': isGrayBackground,
-  'cui__layout__squaredBorders': isSquaredBorders,
-  'cui__layout__cardsShadow': isCardShadow,
-  'cui__layout__borderless': isBorderless
+  'vb__layout': true,
+  'vb__layout__contentMaxWidth': isContentMaxWidth,
+  'vb__layout__appMaxWidth': isAppMaxWidth,
+  'vb__layout__squaredBorders': isSquaredBorders,
+  'vb__layout__cardsShadow': isCardShadow,
+  'vb__layout__borderless': isBorderless
 }">
 
-    <cui-sidebar></cui-sidebar>
-    <cui-support-chat></cui-support-chat>
+    <vb-sidebar></vb-sidebar>
+    <vb-support-chat></vb-support-chat>
 
     <!-- left menu -->
-    <!-- FIX: nz-sider wrapper fix layout behaviour in case when cui-menu-left root tag breaks layout transformation -->
+    <!-- FIX: nz-sider wrapper fix layout behaviour in case when vb-menu-left root tag breaks layout transformation -->
     <nz-sider *ngIf="menuLayoutType === 'left' && !isMobileView" [nzWidth]="isMenuCollapsed ? 80 : leftMenuWidth"
       style="transition: none !important">
-      <cui-menu-left></cui-menu-left>
+      <vb-menu-left></vb-menu-left>
     </nz-sider>
 
     <!-- mobile menu with drawer -->
@@ -27,35 +27,34 @@
       </div>
       <nz-drawer [nzClosable]="false" [nzWrapClassName]="'mobileMenu'" [nzVisible]="isMobileMenuOpen" nzPlacement="left"
         (nzOnClose)="toggleMobileMenu()">
-        <cui-menu-left></cui-menu-left>
+        <vb-menu-left></vb-menu-left>
       </nz-drawer>
     </div>
 
     <!-- top menu -->
     <div *ngIf="menuLayoutType === 'top' && !isMobileView">
-      <cui-menu-top></cui-menu-top>
+      <vb-menu-top></vb-menu-top>
     </div>
 
     <nz-layout>
       <nz-header [ngClass]="{
-        'cui__layout__header': true,
-        'cui__layout__fixedHeader': isTopbarFixed,
-        'cui__layout__headerGray': isGrayTopbar
+        'vb__layout__header': true,
+        'vb__layout__fixedHeader': isTopbarFixed,
+        'vb__layout__headerGray': isGrayTopbar
       }">
-        <cui-topbar></cui-topbar>
+        <vb-topbar></vb-topbar>
       </nz-header>
-      <nz-content style="height: 100%; position: relative;">
-        <cui-breadcrumbs></cui-breadcrumbs>
-        <div class="cui__utils__content">
-          <div [@slideFadeinUp]="routeAnimation(outlet, 'slideFadeinUp')"
-            [@slideFadeinRight]="routeAnimation(outlet, 'slideFadeinRight')"
-            [@zoomFadein]="routeAnimation(outlet, 'zoomFadein')" [@fadein]="routeAnimation(outlet, 'fadein')">
-            <router-outlet #outlet="outlet"></router-outlet>
-          </div>
+      <vb-breadcrumbs></vb-breadcrumbs>
+      <nz-content class="vb__layout__content">
+        <div>{{settings | json}}</div>
+        <div [@slideFadeinUp]="routeAnimation(outlet, 'slideFadeinUp')"
+          [@slideFadeinRight]="routeAnimation(outlet, 'slideFadeinRight')"
+          [@zoomFadein]="routeAnimation(outlet, 'zoomFadein')" [@fadein]="routeAnimation(outlet, 'fadein')">
+          <router-outlet #outlet="outlet"></router-outlet>
         </div>
       </nz-content>
       <nz-footer>
-        <cui-footer></cui-footer>
+        <vb-footer></vb-footer>
       </nz-footer>
     </nz-layout>
   </nz-layout>

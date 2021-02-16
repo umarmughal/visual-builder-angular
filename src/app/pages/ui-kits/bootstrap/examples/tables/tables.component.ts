@@ -35,7 +35,7 @@ const COUNTRIES: Country[] = [
 ]
 
 @Component({
-  selector: 'kit-bootstrap-tables-example',
+  selector: 'vb-bootstrap-tables-example',
   templateUrl: './tables.component.html',
 })
 export class KitBootstrapTablesExampleComponent implements OnInit {

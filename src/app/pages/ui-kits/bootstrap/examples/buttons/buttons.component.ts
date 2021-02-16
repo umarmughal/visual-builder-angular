@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'kit-bootstrap-buttons-example',
+  selector: 'vb-bootstrap-buttons-example',
   templateUrl: './buttons.component.html',
 })
 export class KitBootstrapButtonsExampleComponent {

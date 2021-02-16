@@ -3,20 +3,20 @@
     <div class="col-xl-4 col-lg-12">
       <div class="card">
         <div class="card-body">
-          <kit-general-10v1></kit-general-10v1>
+          <vb-general-10v1></vb-general-10v1>
         </div>
       </div>
       <div class="card text-white bg-primary">
-        <kit-general-12v1></kit-general-12v1>
+        <vb-general-12v1></vb-general-12v1>
       </div>
       <div class="card">
         <div class="card-body">
-          <kit-general-1></kit-general-1>
+          <vb-general-1></vb-general-1>
         </div>
       </div>
       <div class="card">
         <div class="card-body">
-          <kit-list-19></kit-list-19>
+          <vb-list-19></vb-list-19>
         </div>
       </div>
     </div>
@@ -37,7 +37,7 @@
               <div class="text-gray-6">Followers</div>
             </div>
           </div>
-          <nz-tabset class="kit-tabs kit-tabs-bold" (nzSelectedIndexChange)="changeKey($event)">
+          <nz-tabset class="vb-tabs vb-tabs-bold" (nzSelectedIndexChange)="changeKey($event)">
             <nz-tab nzTitle="Agent Wall"></nz-tab>
             <nz-tab nzTitle="Messages"></nz-tab>
             <nz-tab nzTitle="Settings"></nz-tab>
@@ -45,10 +45,10 @@
         </div>
         <div class="card-body">
           <div *ngIf="activeKey === 0">
-            <kit-general-15></kit-general-15>
-            <kit-general-15></kit-general-15>
+            <vb-general-15></vb-general-15>
+            <vb-general-15></vb-general-15>
           </div>
-          <kit-general-14 *ngIf="activeKey === 1"></kit-general-14>
+          <vb-general-14 *ngIf="activeKey === 1"></vb-general-14>
           <form nz-form [nzLayout]="'vertical'" *ngIf="activeKey === 2">
             <h5 class="text-black mt-2 mb-3">
               <strong>Personal Information</strong>

@@ -11,7 +11,7 @@ interface ItemData {
 }
 
 @Component({
-  selector: 'kit-antd-table-example',
+  selector: 'vb-antd-table-example',
   templateUrl: './table.component.html',
   styles: [
     `

@@ -1,11 +1,11 @@
 <nz-layout>
   <nz-content>
-    <cui-sidebar></cui-sidebar>
-    <cui-support-chat></cui-support-chat>
+    <vb-sidebar></vb-sidebar>
+    <vb-support-chat></vb-support-chat>
     <div class="authContainer" [ngClass]="{
-        'cui__layout__squaredBorders': isSquaredBorders,
-        'cui__layout__cardsShadow': isCardShadow,
-        'cui__layout__borderless': isBorderless,
+        'vb__layout__squaredBorders': isSquaredBorders,
+        'vb__layout__cardsShadow': isCardShadow,
+        'vb__layout__borderless': isBorderless,
         'white': authPagesColor === 'white',
         'gray': authPagesColor === 'gray'
 
@@ -22,7 +22,7 @@
         </div>
         <div class="d-none d-sm-block">
           <span class="mr-2">Don't have an account?</span>
-          <a routerLink="/auth/register" class="font-size-16 kit__utils__link">
+          <a routerLink="/auth/register" class="font-size-16 vb__utils__link">
             Sign up
           </a>
         </div>

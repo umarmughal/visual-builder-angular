@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 import { NgbDateStruct, NgbCalendar } from '@ng-bootstrap/ng-bootstrap'
 @Component({
-  selector: 'kit-bootstrap-datepicker-example',
+  selector: 'vb-bootstrap-datepicker-example',
   templateUrl: './datepicker.component.html',
 })
 export class KitBootstrapDatepickerExampleComponent implements OnInit {

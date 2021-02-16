@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-table-expanded',
+  selector: 'vb-antd-table-expanded',
   templateUrl: './expanded.component.html',
 })
 export class KitAntdTableExpandedComponent implements OnInit {

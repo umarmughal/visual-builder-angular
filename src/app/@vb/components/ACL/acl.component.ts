@@ -3,7 +3,7 @@ import { select, Store } from '@ngrx/store'
 import * as Reducers from 'src/app/store/reducers'
 
 @Component({
-  selector: 'cui-acl',
+  selector: 'vb-acl',
   template: `
     <ng-content *ngIf="authorized"></ng-content>
   `,

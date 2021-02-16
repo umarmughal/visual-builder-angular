@@ -38,11 +38,11 @@
           {{data.description}}
         </td>
         <td>
-          <div class="kit__utils__avatarGroup" [ngClass]="[data.users.length ? '' : 'd-none']">
-            <div class="kit__utils__avatar kit__utils__avatar--rounded" *ngFor="let user of data.users">
+          <div class="vb__utils__avatarGroup" [ngClass]="[data.users.length ? '' : 'd-none']">
+            <div class="vb__utils__avatar vb__utils__avatar--rounded" *ngFor="let user of data.users">
               <img [src]="user" alt="User" />
             </div>
-            <button type="button" class="kit__utils__avatarGroupAdd">
+            <button type="button" class="vb__utils__avatarGroupAdd">
               <i class="fe fe-plus"></i>
             </button>
           </div>

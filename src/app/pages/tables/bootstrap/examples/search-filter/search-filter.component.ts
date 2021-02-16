@@ -51,7 +51,7 @@ function search(text: string, pipe: PipeTransform): Country[] {
 }
 
 @Component({
-  selector: 'kit-bootstrap-table-search-filter',
+  selector: 'vb-bootstrap-table-search-filter',
   templateUrl: './search-filter.component.html',
   providers: [DecimalPipe],
 })

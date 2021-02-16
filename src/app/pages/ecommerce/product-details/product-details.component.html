@@ -1,5 +1,5 @@
 <div>
-  <div class="cui__utils__heading">
+  <div class="vb__utils__heading">
     <strong>Ecommerce: Product Details</strong>
   </div>
   <div class="card overflow-hidden">
@@ -49,7 +49,7 @@
             </span>
             Add To Card
           </a>
-          <nz-tabset class="kit-tabs-bordered">
+          <nz-tabset class="vb-tabs-bordered">
             <nz-tab nzTitle="Information"></nz-tab>
             <nz-tab nzTitle="Description"></nz-tab>
           </nz-tabset>
@@ -71,13 +71,13 @@
       </div>
     </div>
   </div>
-  <div class="cui__utils__heading">
+  <div class="vb__utils__heading">
     <strong>Related Products</strong>
   </div>
   <div class="row">
     <div class="col-lg-4" *ngFor="let product of products">
-      <kit-general-16 [isNew]="product.isNew" [isFavorite]="product.isFavorite" [image]="product.image"
-        [name]="product.name" [price]="product.price" [oldPrice]="product.oldPrice"></kit-general-16>
+      <vb-general-16 [isNew]="product.isNew" [isFavorite]="product.isFavorite" [image]="product.image"
+        [name]="product.name" [price]="product.price" [oldPrice]="product.oldPrice"></vb-general-16>
     </div>
   </div>
 </div>

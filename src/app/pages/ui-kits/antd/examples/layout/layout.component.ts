@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-layout-example',
+  selector: 'vb-antd-layout-example',
   templateUrl: './layout.component.html',
   styles: [
     `

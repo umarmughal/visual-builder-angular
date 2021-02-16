@@ -78,7 +78,9 @@ export class AppComponent implements OnInit {
         filter(route => route.outlet === 'primary'),
         mergeMap(route => route.data),
       )
-      .subscribe(event => this.titleService.setTitle('Clean UI Pro Angular | ' + event['title']))
+      .subscribe(event => {
+        this.titleService.setTitle('Visual Builder | ' + event['title'])
+      })
 
     // listen url query params and set them to ngrx store
     this.router.events
@@ -163,7 +165,7 @@ export class AppComponent implements OnInit {
           }
           const body = document.querySelector('body')
           const styleEl = document.createElement('style')
-          const css = document.createTextNode(`:root { --kit-color-primary: ${color};}`)
+          const css = document.createTextNode(`:root { --vb-color-primary: ${color};}`)
           styleEl.setAttribute('id', 'primaryColor')
           styleEl.appendChild(css)
           body.appendChild(styleEl)
@@ -180,7 +182,7 @@ export class AppComponent implements OnInit {
   }
 
   setTheme = theme => {
-    document.querySelector('html').setAttribute('data-kit-theme', theme)
+    document.querySelector('html').setAttribute('data-vb-theme', theme)
     if (theme === 'default') {
       this.store.dispatch(
         new SettingsActions.SetStateAction({

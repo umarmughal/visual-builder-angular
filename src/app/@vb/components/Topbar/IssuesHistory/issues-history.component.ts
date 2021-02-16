@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'cui-topbar-issues-history',
+  selector: 'vb-topbar-issues-history',
   templateUrl: './issues-history.component.html',
   styleUrls: ['./issues-history.component.scss'],
 })

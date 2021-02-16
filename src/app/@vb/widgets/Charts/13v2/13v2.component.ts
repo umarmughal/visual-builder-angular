@@ -5,10 +5,10 @@ declare var require: any
 const data: any = require('./data.json')
 
 @Component({
-  selector: 'kit-chart-13v2',
+  selector: 'vb-chart-13v2',
   templateUrl: './13v2.component.html',
 })
-export class CuiChart13v2Component implements OnInit {
+export class VbChart13v2Component implements OnInit {
   chartData = data
   chartOptions = {
     lineSmooth: Chartist.Interpolation.none({

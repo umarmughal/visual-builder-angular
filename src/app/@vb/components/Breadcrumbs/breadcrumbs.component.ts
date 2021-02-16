@@ -6,7 +6,7 @@ import { reduce } from 'lodash'
 import { MenuService } from 'src/app/services/menu'
 
 @Component({
-  selector: 'cui-breadcrumbs',
+  selector: 'vb-breadcrumbs',
   templateUrl: './breadcrumbs.component.html',
   styleUrls: ['./breadcrumbs.component.scss'],
 })

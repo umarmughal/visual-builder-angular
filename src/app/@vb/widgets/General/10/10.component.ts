@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'kit-general-10',
+  selector: 'vb-general-10',
   templateUrl: './10.component.html',
   styleUrls: ['./10.component.scss'],
 })
-export class CuiGeneral10Component implements OnInit {
+export class VbGeneral10Component implements OnInit {
   constructor() {}
   ngOnInit() {}
 }

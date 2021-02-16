@@ -79,7 +79,7 @@ export class NgbdSortableHeader {
 }
 
 @Component({
-  selector: 'kit-bootstrap-table-sort',
+  selector: 'vb-bootstrap-table-sort',
   templateUrl: './sort.component.html',
   styleUrls: ['./sort.component.scss'],
 })

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-transfer-example',
+  selector: 'vb-antd-transfer-example',
   templateUrl: './transfer.component.html',
 })
 export class KitAntdTransferExampleComponent implements OnInit {

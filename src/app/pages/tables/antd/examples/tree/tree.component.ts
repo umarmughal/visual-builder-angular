@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-table-tree',
+  selector: 'vb-antd-table-tree',
   templateUrl: './tree.component.html',
 })
 export class KitAntdTableTreeComponent implements OnInit {

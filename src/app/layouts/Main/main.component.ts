@@ -14,6 +14,7 @@ import { slideFadeinUp, slideFadeinRight, zoomFadein, fadein } from '../router-a
 })
 export class LayoutMainComponent implements OnInit {
   settings$: Observable<any>
+  settings: any
   isContentMaxWidth: Boolean
   isAppMaxWidth: Boolean
   isGrayBackground: Boolean
@@ -34,6 +35,7 @@ export class LayoutMainComponent implements OnInit {
 
   constructor(private store: Store<any>) {
     this.store.pipe(select(Reducers.getSettings)).subscribe(state => {
+      this.settings = state
       this.isContentMaxWidth = state.isContentMaxWidth
       this.isAppMaxWidth = state.isAppMaxWidth
       this.isGrayBackground = state.isGrayBackground

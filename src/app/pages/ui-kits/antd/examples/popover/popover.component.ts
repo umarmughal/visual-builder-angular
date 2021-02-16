@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-popover-example',
+  selector: 'vb-antd-popover-example',
   templateUrl: './popover.component.html',
 })
 export class KitAntdPopoverExampleComponent {}

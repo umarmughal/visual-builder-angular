@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-table-fixed-header',
+  selector: 'vb-antd-table-fixed-header',
   templateUrl: './fixed-header.component.html',
 })
 export class KitAntdTableFixedHeaderComponent implements OnInit {

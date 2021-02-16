@@ -1,11 +1,11 @@
 import { Component, Input, OnChanges } from '@angular/core'
 
 @Component({
-  selector: 'kit-general-16',
+  selector: 'vb-general-16',
   templateUrl: './16.component.html',
   styleUrls: ['./16.component.scss'],
 })
-export class CuiGeneral16Component implements OnChanges {
+export class VbGeneral16Component implements OnChanges {
   @Input() isNew: boolean
   @Input() isFavorite: boolean
   @Input() image: string

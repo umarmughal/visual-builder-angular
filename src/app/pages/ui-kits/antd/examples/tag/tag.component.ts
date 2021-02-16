@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-tag-example',
+  selector: 'vb-antd-tag-example',
   templateUrl: './tag.component.html',
 })
 export class KitAntdTagExampleComponent {

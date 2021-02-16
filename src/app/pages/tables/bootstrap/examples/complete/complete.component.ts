@@ -7,7 +7,7 @@ import { CountryService } from './country.service'
 import { NgbdSortableHeader, SortEvent } from './sortable.directive'
 
 @Component({
-  selector: 'kit-bootstrap-table-complete',
+  selector: 'vb-bootstrap-table-complete',
   templateUrl: './complete.component.html',
   providers: [CountryService, DecimalPipe],
 })

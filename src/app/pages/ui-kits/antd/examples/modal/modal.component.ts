@@ -2,7 +2,7 @@ import { Component } from '@angular/core'
 import { NzModalService } from 'ng-zorro-antd/modal'
 
 @Component({
-  selector: 'kit-antd-modal-example',
+  selector: 'vb-antd-modal-example',
   templateUrl: './modal.component.html',
 })
 export class KitAntdModalExampleComponent {

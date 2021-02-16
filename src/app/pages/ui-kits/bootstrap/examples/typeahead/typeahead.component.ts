@@ -65,7 +65,7 @@ const states = [
 ]
 
 @Component({
-  selector: 'kit-bootstrap-typeahead-example',
+  selector: 'vb-bootstrap-typeahead-example',
   templateUrl: './typeahead.component.html',
 })
 export class KitBootstrapTypeaheadExampleComponent implements OnInit {

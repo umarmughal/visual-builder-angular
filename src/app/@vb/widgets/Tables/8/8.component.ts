@@ -3,10 +3,10 @@ declare var require: any
 const data: any = require('./data.json')
 
 @Component({
-  selector: 'kit-table-8',
+  selector: 'vb-table-8',
   templateUrl: './8.component.html',
 })
-export class CuiTable8Component implements OnInit {
+export class VbTable8Component implements OnInit {
   isAllDisplayDataChecked = false
   isIndeterminate = false
   listOfDisplayData = data

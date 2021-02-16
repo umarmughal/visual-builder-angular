@@ -4,10 +4,10 @@ declare var require: any
 const data: any = require('./data.json')
 
 @Component({
-  selector: 'kit-chart-4',
+  selector: 'vb-chart-4',
   templateUrl: './4.component.html',
 })
-export class CuiChart4Component implements OnInit {
+export class VbChart4Component implements OnInit {
   chartData = data
   chartOptions = {
     chartPadding: {

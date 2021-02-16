@@ -8,7 +8,7 @@ import * as SettingsActions from 'src/app/store/settings/actions'
 import * as Reducers from 'src/app/store/reducers'
 
 @Component({
-  selector: 'cui-menu-left',
+  selector: 'vb-menu-left',
   templateUrl: './menu-left.component.html',
   styleUrls: ['./menu-left.component.scss'],
 })

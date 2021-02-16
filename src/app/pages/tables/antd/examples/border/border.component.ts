@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-table-border',
+  selector: 'vb-antd-table-border',
   templateUrl: './border.component.html',
 })
 export class KitAntdTableBorderComponent implements OnInit {

@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'kit-list-3',
+  selector: 'vb-list-3',
   templateUrl: './3.component.html',
   styleUrls: ['./3.component.scss'],
 })
-export class CuiList3Component implements OnInit {
+export class VbList3Component implements OnInit {
   constructor() {}
   ngOnInit() {}
 }

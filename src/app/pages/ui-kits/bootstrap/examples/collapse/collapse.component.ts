@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'kit-bootstrap-collapse-example',
+  selector: 'vb-bootstrap-collapse-example',
   templateUrl: './collapse.component.html',
 })
 export class KitBootstrapCollapseExampleComponent implements OnInit {

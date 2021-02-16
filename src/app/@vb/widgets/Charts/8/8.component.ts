@@ -4,11 +4,11 @@ declare var require: any
 const data: any = require('./data.json')
 
 @Component({
-  selector: 'kit-chart-8',
+  selector: 'vb-chart-8',
   templateUrl: './8.component.html',
   styleUrls: ['./8.component.scss'],
 })
-export class CuiChart8Component implements OnInit {
+export class VbChart8Component implements OnInit {
   isAllDisplayDataChecked = false
   isIndeterminate = false
   listOfDisplayData = data

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-calendar-example',
+  selector: 'vb-antd-calendar-example',
   templateUrl: './calendar.component.html',
 })
 export class KitAntdCalendarExampleComponent {

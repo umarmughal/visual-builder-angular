@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'kit-bootstrap-tabs-example',
+  selector: 'vb-bootstrap-tabs-example',
   templateUrl: './tabs.component.html',
 })
 export class KitBootstrapTabsExampleComponent implements OnInit {

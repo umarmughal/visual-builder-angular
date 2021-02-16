@@ -4,7 +4,7 @@ import * as UserActions from 'src/app/store/user/actions'
 import * as Reducers from 'src/app/store/reducers'
 
 @Component({
-  selector: 'cui-topbar-user-menu',
+  selector: 'vb-topbar-user-menu',
   templateUrl: './user-menu.component.html',
   styleUrls: ['./user-menu.component.scss'],
 })

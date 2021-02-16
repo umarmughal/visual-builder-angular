@@ -6,7 +6,7 @@ import {
 } from 'ng-zorro-antd/dropdown'
 
 @Component({
-  selector: 'kit-antd-dropdown-example',
+  selector: 'vb-antd-dropdown-example',
   templateUrl: './dropdown.component.html',
 })
 export class KitAntdDropdownExampleComponent {

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'cui-topbar-actions',
+  selector: 'vb-topbar-actions',
   templateUrl: './actions.component.html',
   styleUrls: ['./actions.component.scss'],
 })

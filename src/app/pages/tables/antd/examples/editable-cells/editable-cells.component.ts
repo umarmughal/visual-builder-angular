@@ -2,7 +2,7 @@ import { Component, OnInit, HostListener, ViewChild, ElementRef } from '@angular
 import { NzInputDirective } from 'ng-zorro-antd'
 
 @Component({
-  selector: 'kit-antd-table-editable-cells',
+  selector: 'vb-antd-table-editable-cells',
   templateUrl: './editable-cells.component.html',
   styles: [
     `

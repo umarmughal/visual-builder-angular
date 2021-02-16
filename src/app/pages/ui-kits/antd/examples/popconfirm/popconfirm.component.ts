@@ -2,7 +2,7 @@ import { Component } from '@angular/core'
 import { NzMessageService } from 'ng-zorro-antd/message'
 
 @Component({
-  selector: 'kit-antd-popconfirm-example',
+  selector: 'vb-antd-popconfirm-example',
   templateUrl: './popconfirm.component.html',
 })
 export class KitAntdPopconfirmExampleComponent {

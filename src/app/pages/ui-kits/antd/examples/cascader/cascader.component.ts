@@ -80,7 +80,7 @@ const otherOptions = [
 ]
 
 @Component({
-  selector: 'kit-antd-cascader-example',
+  selector: 'vb-antd-cascader-example',
   templateUrl: './cascader.component.html',
   styles: [
     `

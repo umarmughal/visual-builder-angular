@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-checkbox-example',
+  selector: 'vb-antd-checkbox-example',
   templateUrl: './checkbox.component.html',
 })
 export class KitAntdCheckboxExampleComponent {

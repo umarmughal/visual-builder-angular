@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'kit-antd-table-fixed-columns',
+  selector: 'vb-antd-table-fixed-columns',
   templateUrl: './fixed-columns.component.html',
 })
 export class KitAntdTableFixedColumnsComponent implements OnInit {
