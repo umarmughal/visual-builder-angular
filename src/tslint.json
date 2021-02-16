@@ -9,7 +9,8 @@
         "cui",
         "layout",
         "air",
-        "kit"
+        "kit",
+        "vb"
       ],
       "camelCase"
     ],
@@ -21,7 +22,8 @@
         "cui",
         "layout",
         "air",
-        "kit"
+        "kit",
+        "vb"
       ],
       "kebab-case"
     ]

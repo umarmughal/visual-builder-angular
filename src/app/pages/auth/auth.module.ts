@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core'
 import { SharedModule } from 'src/app/shared.module'
 import { AuthRouterModule } from './auth-routing.module'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
-import { SystemModule } from 'src/app/components/cleanui/system/system.module'
+import { ComponentsModule } from 'src/app/@vb/components/components.module'
 
 // system pages
 import { LoginPage } from './login/login.component'
@@ -22,7 +22,7 @@ const COMPONENTS = [
 ]
 
 @NgModule({
-  imports: [SharedModule, AuthRouterModule, FormsModule, ReactiveFormsModule, SystemModule],
+  imports: [SharedModule, AuthRouterModule, FormsModule, ReactiveFormsModule, ComponentsModule],
   declarations: [...COMPONENTS],
 })
 export class AuthModule {}
