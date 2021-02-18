@@ -1,6 +1,6 @@
 @import 'src/mixins.scss';
 
-.vb__menuLeft {
+.air__menuLeft {
   flex: 0 0 240px;
   max-width: 240px;
   min-width: 240px;
@@ -28,7 +28,7 @@
     }
 
     @at-root {
-      .vb__menuLeft__mobileToggled {
+      .air__menuLeft__mobileToggled {
         transform: translateX(240px);
       }
     }
@@ -67,7 +67,7 @@
 
     @at-root {
       @media (max-width: $sm-max-width) {
-        .vb__menuLeft__mobileToggled + & {
+        .air__menuLeft__mobileToggled + & {
           opacity: 0.2;
           visibility: visible;
         }
@@ -99,7 +99,7 @@
       top: 5px;
 
       @at-root {
-        .vb__menuLeft__mobileToggled & {
+        .air__menuLeft__mobileToggled & {
           background: transparent;
           &:before {
             transform: translateY(5px) rotate(45deg);
@@ -132,8 +132,8 @@
   // toggle button
   &__toggleButton {
     @at-root {
-      .vb__menuLeft__toggled {
-        .vb__menuLeft__toggleButton {
+      .air__menuLeft__toggled {
+        .air__menuLeft__toggleButton {
           transform: rotate(180deg);
         }
       }
@@ -265,8 +265,8 @@
     padding-left: 0;
     margin: 0;
 
-    .vb__menuLeft__list {
-      .vb__menuLeft__link {
+    .air__menuLeft__list {
+      .air__menuLeft__link {
         padding-left: rem(49);
       }
     }
@@ -295,11 +295,11 @@
   &__item {
     display: block;
     &__active {
-      > .vb__menuLeft__link {
+      > .air__menuLeft__link {
         background: $primary;
         color: $white;
 
-        .vb__menuLeft__icon {
+        .air__menuLeft__icon {
           color: $white;
         }
       }
@@ -307,7 +307,7 @@
   }
 
   &__submenu {
-    > .vb__menuLeft__link {
+    > .air__menuLeft__link {
       position: relative;
       &:before,
       &:after {
@@ -329,22 +329,22 @@
     }
     &__active {
       background: darken($black, 4%);
-      > .vb__menuLeft__link {
+      > .air__menuLeft__link {
         color: $white;
         &:before,
         &:after {
           background: $white;
         }
 
-        .vb__menuLeft__icon {
+        .air__menuLeft__icon {
           color: $white;
         }
       }
-      > .vb__menuLeft__list {
+      > .air__menuLeft__list {
         display: block !important;
       }
     }
-    .vb__menuLeft__list {
+    .air__menuLeft__list {
       display: none;
       padding-bottom: rem(10);
     }
@@ -375,13 +375,13 @@
   // toggled menu
   @at-root {
     @media (min-width: $sm-min-width) {
-      .vb__menuLeft__toggled:not(.vb__menuLeft__compact) {
+      .air__menuLeft__toggled:not(.air__menuLeft__compact) {
         flex: 0 0 80px;
         max-width: 80px;
         min-width: 80px;
         width: 80px;
 
-        .vb__menuLeft {
+        .air__menuLeft {
           &__outer {
             flex: 0 0 80px;
             max-width: 80px;
@@ -407,7 +407,7 @@
             &__active {
               background: $primary;
             }
-            > .vb__menuLeft__list {
+            > .air__menuLeft__list {
               display: none !important;
             }
           }
@@ -442,13 +442,13 @@
   // compact menu
   @at-root {
     @media (min-width: $sm-min-width) {
-      .vb__menuLeft__compact {
+      .air__menuLeft__compact {
         flex: 0 0 150px;
         max-width: 150px;
         min-width: 150px;
         width: 150px;
 
-        .vb__menuLeft {
+        .air__menuLeft {
           &__outer {
             flex: 0 0 150px;
             max-width: 150px;
@@ -490,7 +490,7 @@
             &__active {
               background: $primary;
             }
-            > .vb__menuLeft__list {
+            > .air__menuLeft__list {
               display: none !important;
             }
           }
@@ -531,10 +531,10 @@
 
   // unfixed
   @at-root {
-    .vb__menuLeft__unfixed {
+    .air__menuLeft__unfixed {
       display: flex;
 
-      .vb__menuLeft__outer {
+      .air__menuLeft__outer {
         height: auto;
         position: static;
       }
@@ -543,7 +543,7 @@
 
   // menu shadow
   @at-root {
-    .vb__menuLeft__shadow {
+    .air__menuLeft__shadow {
       box-shadow: $shadow-3;
     }
   }
@@ -551,10 +551,10 @@
   // menu themes
   @at-root {
     // blue theme
-    .vb__menuLeft__blue {
+    .air__menuLeft__blue {
       background: $primary;
 
-      .vb__menuLeft {
+      .air__menuLeft {
         &__toggleButton {
           span:first-child {
             &:before,
@@ -591,7 +591,7 @@
         &__submenu {
           &__active {
             background: $primary;
-            > .vb__menuLeft__link {
+            > .air__menuLeft__link {
               color: $white;
               &:before,
               &:after {
@@ -600,7 +600,7 @@
             }
           }
 
-          > .vb__menuLeft__link {
+          > .air__menuLeft__link {
             &:before,
             &:after {
               background: $gray-5;
@@ -620,10 +620,10 @@
     }
 
     // gray theme
-    .vb__menuLeft__gray {
+    .air__menuLeft__gray {
       background: $gray-1;
 
-      .vb__menuLeft {
+      .air__menuLeft {
         &__category {
           &:after {
             background: darken($gray-1, 4%);
@@ -645,7 +645,7 @@
 
         &__item {
           &__active {
-            .vb__menuLeft__link {
+            .air__menuLeft__link {
               color: $white;
             }
           }
@@ -654,28 +654,28 @@
         &__submenu {
           &__active {
             background: $gray-2;
-            > .vb__menuLeft__link {
-              .vb__menuLeft__icon {
+            > .air__menuLeft__link {
+              .air__menuLeft__icon {
                 color: $text;
               }
 
               &:hover {
-                .vb__menuLeft__icon {
+                .air__menuLeft__icon {
                   color: $white;
                 }
               }
             }
 
             @at-root {
-              .vb__menuLeft__toggled.vb__menuLeft__gray {
-                .vb__menuLeft__submenu__active {
+              .air__menuLeft__toggled.air__menuLeft__gray {
+                .air__menuLeft__submenu__active {
                   background: $gray-2 !important;
                 }
               }
             }
           }
 
-          > .vb__menuLeft__link {
+          > .air__menuLeft__link {
             &:before,
             &:after {
               background: $gray-5;
@@ -709,10 +709,10 @@
     }
 
     // white theme
-    .vb__menuLeft__white {
+    .air__menuLeft__white {
       background: $white;
 
-      .vb__menuLeft {
+      .air__menuLeft {
         &__category {
           &:after {
             background: $gray-1;
@@ -734,7 +734,7 @@
 
         &__item {
           &__active {
-            .vb__menuLeft__link {
+            .air__menuLeft__link {
               color: $white;
             }
           }
@@ -743,28 +743,28 @@
         &__submenu {
           &__active {
             background: $gray-1;
-            > .vb__menuLeft__link {
-              .vb__menuLeft__icon {
+            > .air__menuLeft__link {
+              .air__menuLeft__icon {
                 color: $text;
               }
 
               &:hover {
-                .vb__menuLeft__icon {
+                .air__menuLeft__icon {
                   color: $white;
                 }
               }
             }
 
             @at-root {
-              .vb__menuLeft__toggled.vb__menuLeft__white {
-                .vb__menuLeft__submenu__active {
+              .air__menuLeft__toggled.air__menuLeft__white {
+                .air__menuLeft__submenu__active {
                   background: $gray-1 !important;
                 }
               }
             }
           }
 
-          > .vb__menuLeft__link {
+          > .air__menuLeft__link {
             &:before,
             &:after {
               background: $gray-5;
@@ -800,19 +800,19 @@
 
   // flyout menu styles
   @media (min-width: $sm-min-width) {
-    &__flyout:not(.vb__menuLeft__toggled) {
-      .vb__menuLeft {
+    &__flyout:not(.air__menuLeft__toggled) {
+      .air__menuLeft {
         &__submenu {
           &__active {
             background: $primary;
-            > .vb__menuLeft__link {
+            > .air__menuLeft__link {
               color: $white;
-              .vb__menuLeft__icon {
+              .air__menuLeft__icon {
                 color: $white;
               }
             }
           }
-          > .vb__menuLeft__list {
+          > .air__menuLeft__list {
             display: none !important;
           }
         }
@@ -835,7 +835,7 @@
     &__compact,
     &__toggled {
       // default
-      .vb__menuLeft {
+      .air__menuLeft {
         &__link {
           &:hover {
             background: $primary;
@@ -843,10 +843,10 @@
         }
       }
 
-      &.vb__menuFlyout {
+      &.air__menuFlyout {
         // black
         &__black {
-          .vb__menuLeft {
+          .air__menuLeft {
             &__link {
               &:hover {
                 background: $black;
@@ -856,7 +856,7 @@
         }
         // gray
         &__gray {
-          .vb__menuLeft {
+          .air__menuLeft {
             &__link {
               &:hover {
                 background: $gray-1;
@@ -871,7 +871,7 @@
         }
         // white
         &__white {
-          .vb__menuLeft {
+          .air__menuLeft {
             &__link {
               &:hover {
                 background: $white;
@@ -889,7 +889,7 @@
 
     // flyout container
     @at-root {
-      .vb__menuFlyout {
+      .air__menuFlyout {
         position: fixed;
         z-index: 3000;
         top: 100px;
@@ -900,7 +900,7 @@
         transition-delay: 0 !important;
         transform-origin: 0 0;
 
-        .vb__menuLeft {
+        .air__menuLeft {
           &__list {
             max-width: rem(540);
             display: block !important;
@@ -917,7 +917,7 @@
             }
 
             &__active {
-              .vb__menuLeft__link {
+              .air__menuLeft__link {
                 background: rgba($gray-1, 0.1);
               }
             }
@@ -943,16 +943,16 @@
         // flyout themes
         @at-root {
           @media (min-width: $sm-min-width) {
-            .vb__menuFlyout {
+            .air__menuFlyout {
               // black
               &__black {
-                &.vb__menuFlyout {
+                &.air__menuFlyout {
                   background: $black;
                 }
               }
               //white
               &__white {
-                .vb__menuLeft {
+                .air__menuLeft {
                   &__link {
                     &:hover {
                       &:before,
@@ -963,10 +963,10 @@
                   }
                   &__submenu {
                     &__active {
-                      > .vb__menuLeft__link {
+                      > .air__menuLeft__link {
                         &:hover {
                           color: $primary;
-                          .vb__menuLeft__icon {
+                          .air__menuLeft__icon {
                             color: $primary;
                           }
                         }
@@ -974,11 +974,11 @@
                     }
                   }
                 }
-                &.vb__menuFlyout {
+                &.air__menuFlyout {
                   background: $white;
                   box-shadow: $shadow-2;
 
-                  .vb__menuLeft {
+                  .air__menuLeft {
                     &__item {
                       border-left: 1px solid $gray-1;
                       border-bottom: 1px solid $gray-1;
@@ -989,7 +989,7 @@
                         color: $primary;
                         background: rgba($gray-3, 0.3);
                         &__active {
-                          .vb__menuLeft__link {
+                          .air__menuLeft__link {
                             background: rgba($gray-3, 0.3);
                           }
                         }
@@ -1000,7 +1000,7 @@
               }
               // gray
               &__gray {
-                .vb__menuLeft {
+                .air__menuLeft {
                   &__link {
                     &:hover {
                       &:before,
@@ -1011,10 +1011,10 @@
                   }
                   &__submenu {
                     &__active {
-                      > .vb__menuLeft__link {
+                      > .air__menuLeft__link {
                         &:hover {
                           color: $primary;
-                          .vb__menuLeft__icon {
+                          .air__menuLeft__icon {
                             color: $primary;
                           }
                         }
@@ -1022,16 +1022,16 @@
                     }
                   }
                 }
-                &.vb__menuFlyout {
+                &.air__menuFlyout {
                   background: $gray-1;
                   box-shadow: $shadow-2;
 
-                  .vb__menuLeft {
+                  .air__menuLeft {
                     &__item {
                       border-left: 1px solid darken($gray-1, 4%);
                       border-bottom: 1px solid darken($gray-1, 4%);
                       &__active {
-                        .vb__menuLeft__link {
+                        .air__menuLeft__link {
                           background: rgba($gray-3, 0.3);
                         }
                       }

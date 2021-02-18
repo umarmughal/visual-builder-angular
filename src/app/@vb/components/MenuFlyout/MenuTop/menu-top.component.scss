@@ -1,6 +1,6 @@
 @import 'src/mixins.scss';
 
-.vb__menuTop {
+.air__menuTop {
   background: $black;
 
   @media (max-width: $sm-max-width) {
@@ -22,7 +22,7 @@
     }
 
     @at-root {
-      .vb__menuTop__mobileToggled {
+      .air__menuTop__mobileToggled {
         transform: translateX(240px);
       }
     }
@@ -79,7 +79,7 @@
 
     @at-root {
       @media (max-width: $sm-max-width) {
-        .vb__menuTop__mobileToggled + & {
+        .air__menuTop__mobileToggled + & {
           opacity: 0.2;
           visibility: visible;
         }
@@ -111,7 +111,7 @@
       top: 5px;
 
       @at-root {
-        .vb__menuTop__mobileToggled & {
+        .air__menuTop__mobileToggled & {
           background: transparent;
           &:before {
             transform: translateY(5px) rotate(45deg);
@@ -184,8 +184,8 @@
     padding-left: 0;
     margin: 0;
 
-    .vb__menuTop__list {
-      .vb__menuTop__link {
+    .air__menuTop__list {
+      .air__menuTop__link {
         padding-left: rem(49);
       }
     }
@@ -193,7 +193,7 @@
     @media (min-width: $sm-min-width) {
       display: flex;
       flex-wrap: wrap;
-      .vb__menuTop__list {
+      .air__menuTop__list {
         display: none !important;
       }
     }
@@ -204,11 +204,11 @@
       margin-left: rem(10);
     }
     &__active {
-      > .vb__menuTop__link {
+      > .air__menuTop__link {
         background: $primary;
         color: $white;
 
-        .vb__menuTop__icon {
+        .air__menuTop__icon {
           color: $white;
         }
       }
@@ -216,7 +216,7 @@
   }
 
   &__submenu {
-    > .vb__menuTop__link {
+    > .air__menuTop__link {
       position: relative;
       &:before,
       &:after {
@@ -255,23 +255,23 @@
         border-radius: 3px;
       }
 
-      > .vb__menuTop__link {
+      > .air__menuTop__link {
         color: $white;
         &:before,
         &:after {
           background: $white;
         }
 
-        .vb__menuTop__icon {
+        .air__menuTop__icon {
           color: $white;
         }
       }
 
-      > .vb__menuTop__list {
+      > .air__menuTop__list {
         display: block !important;
       }
     }
-    .vb__menuTop__list {
+    .air__menuTop__list {
       display: none;
       padding-bottom: rem(10);
 
@@ -310,7 +310,7 @@
 
   // menu shadow
   @at-root {
-    .vb__menuTop__shadow {
+    .air__menuTop__shadow {
       box-shadow: $shadow-3;
     }
   }
@@ -318,10 +318,10 @@
   // menu themes
   @at-root {
     // blue theme
-    .vb__menuTop__blue {
+    .air__menuTop__blue {
       background: $primary;
 
-      .vb__menuTop {
+      .air__menuTop {
         &__link {
           color: $gray-2;
 
@@ -337,7 +337,7 @@
         &__submenu {
           &__active {
             background: $primary;
-            > .vb__menuTop__link {
+            > .air__menuTop__link {
               color: $white;
               &:before,
               &:after {
@@ -346,7 +346,7 @@
             }
           }
 
-          > .vb__menuTop__link {
+          > .air__menuTop__link {
             &:before,
             &:after {
               background: $gray-5;
@@ -357,10 +357,10 @@
     }
 
     // gray theme
-    .vb__menuTop__gray {
+    .air__menuTop__gray {
       background: $gray-1;
 
-      .vb__menuTop {
+      .air__menuTop {
         &__link {
           color: $text;
 
@@ -376,7 +376,7 @@
 
         &__item {
           &__active {
-            .vb__menuTop__link {
+            .air__menuTop__link {
               color: $white;
             }
           }
@@ -385,20 +385,20 @@
         &__submenu {
           &__active {
             background: $gray-2;
-            > .vb__menuTop__link {
-              .vb__menuTop__icon {
+            > .air__menuTop__link {
+              .air__menuTop__icon {
                 color: $text;
               }
 
               &:hover {
-                .vb__menuTop__icon {
+                .air__menuTop__icon {
                   color: $white;
                 }
               }
             }
           }
 
-          > .vb__menuTop__link {
+          > .air__menuTop__link {
             &:before,
             &:after {
               background: $gray-5;
@@ -419,10 +419,10 @@
     }
 
     // white theme
-    .vb__menuTop__white {
+    .air__menuTop__white {
       background: $white;
 
-      .vb__menuTop {
+      .air__menuTop {
         &__link {
           color: $text;
 
@@ -438,7 +438,7 @@
 
         &__item {
           &__active {
-            .vb__menuTop__link {
+            .air__menuTop__link {
               color: $white;
             }
           }
@@ -447,20 +447,20 @@
         &__submenu {
           &__active {
             background: $gray-1;
-            > .vb__menuTop__link {
-              .vb__menuTop__icon {
+            > .air__menuTop__link {
+              .air__menuTop__icon {
                 color: $text;
               }
 
               &:hover {
-                .vb__menuTop__icon {
+                .air__menuTop__icon {
                   color: $white;
                 }
               }
             }
           }
 
-          > .vb__menuTop__link {
+          > .air__menuTop__link {
             &:before,
             &:after {
               background: $gray-5;
@@ -483,14 +483,14 @@
 
   // flyout menu styles
   @media (min-width: $sm-min-width) {
-    &__flyout:not(.vb__menuTop__toggled) {
-      .vb__menuTop {
+    &__flyout:not(.air__menuTop__toggled) {
+      .air__menuTop {
         &__submenu {
           &__active {
             background: $primary;
-            > .vb__menuTop__link {
+            > .air__menuTop__link {
               color: $white;
-              .vb__menuTop__icon {
+              .air__menuTop__icon {
                 color: $white;
               }
             }
@@ -500,7 +500,7 @@
     }
 
     // default
-    .vb__menuTop {
+    .air__menuTop {
       &__link {
         &:hover {
           background: $primary;
@@ -509,10 +509,10 @@
     }
 
     // menu item hover styles
-    &.vb__menuFlyout {
+    &.air__menuFlyout {
       // black
       &__black {
-        .vb__menuTop {
+        .air__menuTop {
           &__link {
             &:hover {
               background: $black;
@@ -522,7 +522,7 @@
       }
       // gray
       &__gray {
-        .vb__menuTop {
+        .air__menuTop {
           &__link {
             &:hover {
               background: $gray-1;
@@ -537,7 +537,7 @@
       }
       // white
       &__white {
-        .vb__menuTop {
+        .air__menuTop {
           &__link {
             &:hover {
               background: $white;
@@ -554,7 +554,7 @@
 
     // flyout container
     @at-root {
-      .vb__menuFlyout {
+      .air__menuFlyout {
         position: fixed;
         z-index: 3000;
         top: 100px;
@@ -565,7 +565,7 @@
         transition-delay: 0 !important;
         transform-origin: 0 0;
 
-        .vb__menuTop {
+        .air__menuTop {
           &__list {
             max-width: rem(360);
             display: block !important;
@@ -582,7 +582,7 @@
             }
 
             &__active {
-              .vb__menuTop__link {
+              .air__menuTop__link {
                 background: rgba($gray-1, 0.1);
               }
             }
@@ -608,16 +608,16 @@
         // flyout themes
         @at-root {
           @media (min-width: $sm-min-width) {
-            .vb__menuFlyout {
+            .air__menuFlyout {
               // black
               &__black {
-                &.vb__menuFlyout {
+                &.air__menuFlyout {
                   background: $black;
                 }
               }
               //white
               &__white {
-                .vb__menuTop {
+                .air__menuTop {
                   &__link {
                     &:hover {
                       color: $primary;
@@ -625,17 +625,17 @@
                       &:after {
                         background: $primary !important;
                       }
-                      .vb__menuTop__icon {
+                      .air__menuTop__icon {
                         color: $primary;
                       }
                     }
                   }
                   &__submenu {
                     &__active {
-                      > .vb__menuTop__link {
+                      > .air__menuTop__link {
                         &:hover {
                           color: $primary;
-                          .vb__menuTop__icon {
+                          .air__menuTop__icon {
                             color: $primary;
                           }
                         }
@@ -643,11 +643,11 @@
                     }
                   }
                 }
-                &.vb__menuFlyout {
+                &.air__menuFlyout {
                   background: $white;
                   box-shadow: $shadow-2;
 
-                  .vb__menuTop {
+                  .air__menuTop {
                     &__item {
                       border-left: 1px solid $gray-1;
                       border-bottom: 1px solid $gray-1;
@@ -658,7 +658,7 @@
                         color: $primary;
                         background: rgba($gray-3, 0.3);
                         &__active {
-                          .vb__menuTop__link {
+                          .air__menuTop__link {
                             background: rgba($gray-3, 0.3);
                           }
                         }
@@ -669,24 +669,24 @@
               }
               // gray
               &__gray {
-                .vb__menuTop {
+                .air__menuTop {
                   &__link {
                     &:hover {
                       &:before,
                       &:after {
                         background: $primary !important;
                       }
-                      .vb__menuTop__icon {
+                      .air__menuTop__icon {
                         color: $primary;
                       }
                     }
                   }
                   &__submenu {
                     &__active {
-                      > .vb__menuTop__link {
+                      > .air__menuTop__link {
                         &:hover {
                           color: $primary;
-                          .vb__menuTop__icon {
+                          .air__menuTop__icon {
                             color: $primary;
                           }
                         }
@@ -694,16 +694,16 @@
                     }
                   }
                 }
-                &.vb__menuFlyout {
+                &.air__menuFlyout {
                   background: $gray-1;
                   box-shadow: $shadow-2;
 
-                  .vb__menuTop {
+                  .air__menuTop {
                     &__item {
                       border-left: 1px solid darken($gray-1, 4%);
                       border-bottom: 1px solid darken($gray-1, 4%);
                       &__active {
-                        .vb__menuTop__link {
+                        .air__menuTop__link {
                           background: rgba($gray-3, 0.3);
                         }
                       }

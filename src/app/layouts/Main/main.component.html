@@ -13,30 +13,32 @@
     <vb-sidebar></vb-sidebar>
     <vb-support-chat></vb-support-chat>
 
-    <!-- left menu -->
-    <!-- FIX: nz-sider wrapper fix layout behaviour in case when vb-menu-left root tag breaks layout transformation -->
-    <!-- <nz-sider *ngIf="settings.menuLayoutType === 'left' && !settings.isMobileView"
+    <!-- classic left menu -->
+    <nz-sider *ngIf="settings.layoutMenu === 'classic' && settings.menuLayoutType === 'left' && !settings.isMobileView"
       [nzWidth]="settings.isMenuCollapsed ? 80 : settings.leftMenuWidth" style="transition: none !important">
-      <vb-menu-left></vb-menu-left>
-    </nz-sider> -->
-
-    <!-- mobile menu with drawer -->
-    <!-- <div *ngIf="settings.isMobileView">
+      <vb-menu-classic-left></vb-menu-classic-left>
+    </nz-sider>
+    <div *ngIf="settings.layoutMenu === 'classic' && settings.isMobileView">
       <div class="handler" (click)="toggleMobileMenu()">
         <div class="handlerIcon"></div>
       </div>
-      <nz-drawer [nzClosable]="false" [nzWrapClassName]="'mobileMenu'" [nzVisible]="settings.isMobileMenuOpen"
-        nzPlacement="left" (nzOnClose)="toggleMobileMenu()">
-        <vb-menu-left></vb-menu-left>
+      <nz-drawer [nzClosable]="false" [nzWrapClassName]="'mobileMenu'" [nzVisible]="isMobileMenuOpen" nzPlacement="left"
+        (nzOnClose)="toggleMobileMenu()">
+        <vb-menu-classic-left></vb-menu-classic-left>
       </nz-drawer>
-    </div> -->
+    </div>
+    <div *ngIf="settings.layoutMenu === 'classic' && settings.menuLayoutType === 'top' && !settings.isMobileView">
+      <vb-menu-classic-top></vb-menu-classic-top>
+    </div>
 
-    <!-- top menu -->
-    <!-- <div *ngIf="settings.menuLayoutType === 'top' && !settings.isMobileView">
-      <vb-menu-top></vb-menu-top>
-    </div> -->
-    <vb-menu-classic *ngIf="settings.layoutMenu === 'classic'"></vb-menu-classic>
-    <vb-menu-flyout *ngIf="settings.layoutMenu === 'flyout'"></vb-menu-flyout>
+    <!-- flyout left menu -->
+    <nz-sider *ngIf="settings.layoutMenu === 'flyout' && settings.menuLayoutType === 'left'" [nzWidth]="'auto'">
+      <vb-menu-flyout-left></vb-menu-flyout-left>
+    </nz-sider>
+    <vb-menu-flyout-top *ngIf="settings.layoutMenu === 'flyout' && settings.menuLayoutType === 'top'">
+    </vb-menu-flyout-top>
+
+    <!-- simply menu -->
     <vb-menu-simply *ngIf="settings.layoutMenu === 'simply'"></vb-menu-simply>
 
     <nz-layout>
@@ -51,7 +53,6 @@
       <vb-breadcrumbs *ngIf="settings.layoutBreadcrumbs === 'v1'"></vb-breadcrumbs>
       <vb-breadcrumbs-2 *ngIf="settings.layoutBreadcrumbs === 'v2'"></vb-breadcrumbs-2>
       <nz-content class="vb__layout__content">
-        <div>{{settings | json}}</div>
         <div [@slideFadeinUp]="routeAnimation(outlet, 'slideFadeinUp')"
           [@slideFadeinRight]="routeAnimation(outlet, 'slideFadeinRight')"
           [@zoomFadein]="routeAnimation(outlet, 'zoomFadein')" [@fadein]="routeAnimation(outlet, 'fadein')">
