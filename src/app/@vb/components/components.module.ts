@@ -12,10 +12,19 @@ import { TopbarSearchComponent } from './Topbar/Search/search.component'
 import { TopbarUserMenuComponent } from './Topbar/UserMenu/user-menu.component'
 import { TopbarProjectManagementComponent } from './Topbar/ProjectManagement/project-management.component'
 import { TopbarFavPagesComponent } from './Topbar/FavPages/fav-pages.component'
-import { MenuLeftComponent } from './Menu/MenuLeft/menu-left.component'
-import { MenuTopComponent } from './Menu/MenuTop/menu-top.component'
+import { MenuClassicComponent } from './MenuClassic/menu-classic.component'
+import { MenuClassicLeftComponent } from './MenuClassic/MenuLeft/menu-left.component'
+import { MenuClassicTopComponent } from './MenuClassic/MenuTop/menu-top.component'
+import { MenuFlyoutComponent } from './MenuFlyout/menu-flyout.component'
+import { MenuFlyoutLeftComponent } from './MenuFlyout/MenuLeft/menu-left.component'
+import { MenuFlyoutTopComponent } from './MenuFlyout/MenuTop/menu-top.component'
+import { MenuSimplyComponent } from './MenuSimply/menu-simply.component'
 import { FooterComponent } from './Footer/footer.component'
+import { Footer2Component } from './Footer2/footer.component'
+import { Footer3Component } from './Footer3/footer.component'
+import { Footer4Component } from './Footer4/footer.component'
 import { BreadcrumbsComponent } from './Breadcrumbs/breadcrumbs.component'
+import { Breadcrumbs2Component } from './Breadcrumbs2/breadcrumbs.component'
 import { SidebarComponent } from './Sidebar/sidebar.component'
 import { SupportChatComponent } from './SupportChat/support-chat.component'
 
@@ -34,10 +43,19 @@ const COMPONENTS = [
   TopbarProjectManagementComponent,
   TopbarActionsComponent,
   TopbarLanguageSwitcherComponent,
-  MenuLeftComponent,
-  MenuTopComponent,
+  MenuClassicComponent,
+  MenuClassicLeftComponent,
+  MenuClassicTopComponent,
+  MenuFlyoutComponent,
+  MenuFlyoutLeftComponent,
+  MenuFlyoutTopComponent,
+  MenuSimplyComponent,
   FooterComponent,
+  Footer2Component,
+  Footer3Component,
+  Footer4Component,
   BreadcrumbsComponent,
+  Breadcrumbs2Component,
   SidebarComponent,
   SupportChatComponent,
   TopbarFavPagesComponent,

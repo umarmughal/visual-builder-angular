@@ -1,13 +1,13 @@
 <div [ngClass]="{
-  'vb__layout__grayBackground': isGrayBackground
+  'vb__layout__grayBackground': settings.isGrayBackground
 }">
   <nz-layout [ngClass]="{
   'vb__layout': true,
-  'vb__layout__contentMaxWidth': isContentMaxWidth,
-  'vb__layout__appMaxWidth': isAppMaxWidth,
-  'vb__layout__squaredBorders': isSquaredBorders,
-  'vb__layout__cardsShadow': isCardShadow,
-  'vb__layout__borderless': isBorderless
+  'vb__layout__contentMaxWidth': settings.isContentMaxWidth,
+  'vb__layout__appMaxWidth': settings.isAppMaxWidth,
+  'vb__layout__squaredBorders': settings.isSquaredBorders,
+  'vb__layout__cardsShadow': settings.isCardShadow,
+  'vb__layout__borderless': settings.isBorderless
 }">
 
     <vb-sidebar></vb-sidebar>
@@ -15,36 +15,40 @@
 
     <!-- left menu -->
     <!-- FIX: nz-sider wrapper fix layout behaviour in case when vb-menu-left root tag breaks layout transformation -->
-    <nz-sider *ngIf="menuLayoutType === 'left' && !isMobileView" [nzWidth]="isMenuCollapsed ? 80 : leftMenuWidth"
-      style="transition: none !important">
+    <!-- <nz-sider *ngIf="settings.menuLayoutType === 'left' && !settings.isMobileView"
+      [nzWidth]="settings.isMenuCollapsed ? 80 : settings.leftMenuWidth" style="transition: none !important">
       <vb-menu-left></vb-menu-left>
-    </nz-sider>
+    </nz-sider> -->
 
     <!-- mobile menu with drawer -->
-    <div *ngIf="isMobileView">
+    <!-- <div *ngIf="settings.isMobileView">
       <div class="handler" (click)="toggleMobileMenu()">
         <div class="handlerIcon"></div>
       </div>
-      <nz-drawer [nzClosable]="false" [nzWrapClassName]="'mobileMenu'" [nzVisible]="isMobileMenuOpen" nzPlacement="left"
-        (nzOnClose)="toggleMobileMenu()">
+      <nz-drawer [nzClosable]="false" [nzWrapClassName]="'mobileMenu'" [nzVisible]="settings.isMobileMenuOpen"
+        nzPlacement="left" (nzOnClose)="toggleMobileMenu()">
         <vb-menu-left></vb-menu-left>
       </nz-drawer>
-    </div>
+    </div> -->
 
     <!-- top menu -->
-    <div *ngIf="menuLayoutType === 'top' && !isMobileView">
+    <!-- <div *ngIf="settings.menuLayoutType === 'top' && !settings.isMobileView">
       <vb-menu-top></vb-menu-top>
-    </div>
+    </div> -->
+    <vb-menu-classic *ngIf="settings.layoutMenu === 'classic'"></vb-menu-classic>
+    <vb-menu-flyout *ngIf="settings.layoutMenu === 'flyout'"></vb-menu-flyout>
+    <vb-menu-simply *ngIf="settings.layoutMenu === 'simply'"></vb-menu-simply>
 
     <nz-layout>
-      <nz-header [ngClass]="{
+      <nz-header *ngIf="settings.layoutTopbar === 'v1'" [ngClass]="{
         'vb__layout__header': true,
-        'vb__layout__fixedHeader': isTopbarFixed,
-        'vb__layout__headerGray': isGrayTopbar
+        'vb__layout__fixedHeader': settings.isTopbarFixed,
+        'vb__layout__headerGray': settings.isGrayTopbar
       }">
         <vb-topbar></vb-topbar>
       </nz-header>
-      <vb-breadcrumbs></vb-breadcrumbs>
+      <vb-breadcrumbs *ngIf="settings.layoutBreadcrumbs === 'v1'"></vb-breadcrumbs>
+      <vb-breadcrumbs-2 *ngIf="settings.layoutBreadcrumbs === 'v2'"></vb-breadcrumbs-2>
       <nz-content class="vb__layout__content">
         <div>{{settings | json}}</div>
         <div [@slideFadeinUp]="routeAnimation(outlet, 'slideFadeinUp')"
@@ -53,8 +57,17 @@
           <router-outlet #outlet="outlet"></router-outlet>
         </div>
       </nz-content>
-      <nz-footer>
+      <nz-footer *ngIf="settings.layoutFooter === 'v1'">
         <vb-footer></vb-footer>
+      </nz-footer>
+      <nz-footer *ngIf="settings.layoutFooter === 'v2'">
+        <vb-footer-2></vb-footer-2>
+      </nz-footer>
+      <nz-footer *ngIf="settings.layoutFooter === 'v3'">
+        <vb-footer-3></vb-footer-3>
+      </nz-footer>
+      <nz-footer *ngIf="settings.layoutFooter === 'v4'">
+        <vb-footer-4></vb-footer-4>
       </nz-footer>
     </nz-layout>
   </nz-layout>
