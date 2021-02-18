@@ -43,7 +43,8 @@
       <nz-header *ngIf="settings.layoutTopbar === 'v1'" [ngClass]="{
         'vb__layout__header': true,
         'vb__layout__fixedHeader': settings.isTopbarFixed,
-        'vb__layout__headerGray': settings.isGrayTopbar
+        'vb__layout__headerGray': settings.isGrayTopbar,
+        'vb__layout__separatedHeader': settings.isTopbarSeparated
       }">
         <vb-topbar></vb-topbar>
       </nz-header>

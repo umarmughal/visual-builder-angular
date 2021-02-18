@@ -9,7 +9,6 @@ import * as Reducers from 'src/app/store/reducers'
   styleUrls: ['./user-menu.component.scss'],
 })
 export class TopbarUserMenuComponent {
-  badgeCount: number = 7
   name: string = ''
   role: string = ''
   email: string = ''
@@ -21,10 +20,6 @@ export class TopbarUserMenuComponent {
       this.role = state.role
       this.email = state.email
     })
-  }
-
-  badgeCountIncrease() {
-    this.badgeCount = this.badgeCount + 1
   }
 
   logout() {

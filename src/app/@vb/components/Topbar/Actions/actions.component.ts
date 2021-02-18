@@ -5,4 +5,10 @@ import { Component } from '@angular/core'
   templateUrl: './actions.component.html',
   styleUrls: ['./actions.component.scss'],
 })
-export class TopbarActionsComponent {}
+export class TopbarActionsComponent {
+  badgeCount: number = 7
+
+  badgeCountIncrease() {
+    this.badgeCount = this.badgeCount + 1
+  }
+}

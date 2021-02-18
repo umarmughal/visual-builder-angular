@@ -11,6 +11,12 @@ import * as Reducers from 'src/app/store/reducers'
 })
 export class TopbarLanguageSwitcherComponent {
   language: string
+  mapFlags = {
+    en: '/assets/flags/en.svg',
+    ru: '/assets/flags/ru.svg',
+    fr: '/assets/flags/fr.svg',
+    zh: '/assets/flags/zh.svg',
+  }
 
   constructor(private translate: TranslateService, private store: Store<any>) {
     this.store.pipe(select(Reducers.getSettings)).subscribe(state => {

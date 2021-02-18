@@ -54,6 +54,7 @@ import { VbGeneral23Component } from './General/23/23.component'
 import { VbGeneral23v1Component } from './General/23v1/23v1.component'
 import { VbGeneral24Component } from './General/24/24.component'
 import { VbGeneral24v1Component } from './General/24v1/24v1.component'
+import { VbGeneral26Component } from './General/26/26.component'
 import { VbGeneral27Component } from './General/27/27.component'
 import { VbGeneral27v1Component } from './General/27v1/27v1.component'
 
@@ -160,6 +161,7 @@ const COMPONENTS = [
   VbGeneral23v1Component,
   VbGeneral24Component,
   VbGeneral24v1Component,
+  VbGeneral26Component,
   VbGeneral27Component,
   VbGeneral27v1Component,
   VbList1Component,

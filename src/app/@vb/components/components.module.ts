@@ -12,6 +12,7 @@ import { TopbarSearchComponent } from './Topbar/Search/search.component'
 import { TopbarUserMenuComponent } from './Topbar/UserMenu/user-menu.component'
 import { TopbarProjectManagementComponent } from './Topbar/ProjectManagement/project-management.component'
 import { TopbarFavPagesComponent } from './Topbar/FavPages/fav-pages.component'
+import { TopbarCartComponent } from './Topbar/Cart/cart.component'
 import { MenuClassicComponent } from './MenuClassic/menu-classic.component'
 import { MenuClassicLeftComponent } from './MenuClassic/MenuLeft/menu-left.component'
 import { MenuClassicTopComponent } from './MenuClassic/MenuTop/menu-top.component'
@@ -43,6 +44,8 @@ const COMPONENTS = [
   TopbarProjectManagementComponent,
   TopbarActionsComponent,
   TopbarLanguageSwitcherComponent,
+  TopbarFavPagesComponent,
+  TopbarCartComponent,
   MenuClassicComponent,
   MenuClassicLeftComponent,
   MenuClassicTopComponent,
@@ -58,7 +61,6 @@ const COMPONENTS = [
   Breadcrumbs2Component,
   SidebarComponent,
   SupportChatComponent,
-  TopbarFavPagesComponent,
 
   ForgotPasswordComponent,
   LockscreenComponent,

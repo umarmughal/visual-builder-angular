@@ -31,6 +31,7 @@ const locales = {
 export class AppComponent implements OnInit {
   _locale: String
   _theme: String
+  _version: String
 
   constructor(
     private router: Router,
@@ -51,6 +52,9 @@ export class AppComponent implements OnInit {
       }
       if (this._theme !== state.theme) {
         this.setTheme(state.theme)
+      }
+      if (this._version !== state.version) {
+        this.setVersion(state.version)
       }
       this._locale = state.locale
       this._theme = state.theme
@@ -181,21 +185,18 @@ export class AppComponent implements OnInit {
     primaryColor()
   }
 
+  // set version
+  setVersion = version => {
+    document.querySelector('html').setAttribute('data-vb-version', version)
+  }
+
+  // set theme
   setTheme = theme => {
     document.querySelector('html').setAttribute('data-vb-theme', theme)
-    if (theme === 'default') {
-      this.store.dispatch(
-        new SettingsActions.SetStateAction({
-          menuColor: 'light',
-        }),
-      )
-    }
-    if (theme === 'dark') {
-      this.store.dispatch(
-        new SettingsActions.SetStateAction({
-          menuColor: 'dark',
-        }),
-      )
-    }
+    this.store.dispatch(
+      new SettingsActions.SetStateAction({
+        menuColor: theme === 'dark' ? 'dark' : 'white',
+      }),
+    )
   }
 }

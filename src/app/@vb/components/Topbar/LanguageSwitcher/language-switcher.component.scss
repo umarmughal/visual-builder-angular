@@ -5,7 +5,6 @@
   position: relative;
   cursor: pointer;
   @include transition-slow;
-  color: $gray-5;
 
   &::after {
     opacity: 0.5;
@@ -32,6 +31,24 @@
     &::after {
       color: $gray-6;
     }
+  }
+}
+
+.flag {
+  vertical-align: top;
+  text-transform: uppercase;
+  padding-right: rem(5);
+
+  img {
+    height: rem(21);
+    margin-right: rem(5);
+  }
+}
+
+.menuIcon {
+  img {
+    height: rem(21);
+    margin-right: rem(10);
   }
 }
 

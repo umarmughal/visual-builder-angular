@@ -1,23 +1,34 @@
 <div>
-  <div nz-dropdown nzTrigger="click" class="dropdown" [nzDropdownMenu]="menu">
-    <span class="text-uppercase">{{language}}</span>
+  <div nz-dropdown nzTrigger="click" nzPlacement="bottomRight" class="dropdown" [nzDropdownMenu]="menu">
+    <div class="flag">
+      <img [src]="mapFlags[language]" [alt]="language" />
+      <span class="text-uppercase">{{language}}</span>
+    </div>
   </div>
   <nz-dropdown-menu #menu="nzDropdownMenu">
     <ul nz-menu>
       <li nz-menu-item (click)="changeLanguage('en-US')">
-        <span class="text-uppercase font-size-12 mr-2">EN</span>
+        <span class="menuIcon">
+          <img [src]="mapFlags.en" alt="English" />
+        </span>
         English
       </li>
       <li nz-menu-item (click)="changeLanguage('fr-FR')">
-        <span class="text-uppercase font-size-12 mr-2">FR</span>
+        <span class="menuIcon">
+          <img [src]="mapFlags.fr" alt="English" />
+        </span>
         French
       </li>
       <li nz-menu-item (click)="changeLanguage('ru-RU')">
-        <span class="text-uppercase font-size-12 mr-2">RU</span>
+        <span class="menuIcon">
+          <img [src]="mapFlags.ru" alt="English" />
+        </span>
         Русский
       </li>
       <li nz-menu-item (click)="changeLanguage('zh-CN')">
-        <span class="text-uppercase font-size-12 mr-2">CN</span>
+        <span class="menuIcon">
+          <img [src]="mapFlags.zh" alt="English" />
+        </span>
         简体中文
       </li>
     </ul>
