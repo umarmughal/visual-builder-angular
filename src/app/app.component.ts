@@ -32,6 +32,8 @@ export class AppComponent implements OnInit {
   _locale: String
   _theme: String
   _version: String
+  logo: String
+  pageTitle: String
   firstTouch: boolean = false
 
   constructor(
@@ -59,6 +61,8 @@ export class AppComponent implements OnInit {
       }
       this._locale = state.locale
       this._theme = state.theme
+      this.logo = state.logo
+      this.setTitle()
     })
   }
 
@@ -84,7 +88,8 @@ export class AppComponent implements OnInit {
         mergeMap(route => route.data),
       )
       .subscribe(event => {
-        this.titleService.setTitle('Visual Builder | ' + event['title'])
+        this.pageTitle = event['title']
+        this.setTitle()
       })
 
     // listen url query params and set them to ngrx store
@@ -184,6 +189,11 @@ export class AppComponent implements OnInit {
       }
     }
     primaryColor()
+  }
+
+  // set title
+  setTitle = () => {
+    this.titleService.setTitle(`${this.logo} | ${this.pageTitle}`)
   }
 
   // set version
