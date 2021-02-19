@@ -32,6 +32,7 @@ export class AppComponent implements OnInit {
   _locale: String
   _theme: String
   _version: String
+  firstTouch: boolean = false
 
   constructor(
     private router: Router,
@@ -192,11 +193,23 @@ export class AppComponent implements OnInit {
 
   // set theme
   setTheme = theme => {
-    document.querySelector('html').setAttribute('data-vb-theme', theme)
-    this.store.dispatch(
-      new SettingsActions.SetStateAction({
-        menuColor: theme === 'dark' ? 'dark' : 'white',
-      }),
-    )
+    if (this.firstTouch) {
+      document.querySelector('html').setAttribute('data-vb-theme', theme)
+      if (theme === 'default') {
+        this.store.dispatch(
+          new SettingsActions.SetStateAction({
+            menuColor: 'white',
+          }),
+        )
+      }
+      if (theme === 'dark') {
+        this.store.dispatch(
+          new SettingsActions.SetStateAction({
+            menuColor: 'dark',
+          }),
+        )
+      }
+    }
+    this.firstTouch = true
   }
 }

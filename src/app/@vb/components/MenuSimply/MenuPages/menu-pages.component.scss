@@ -5,17 +5,16 @@
   padding-bottom: rem(10);
   padding-right: 35px;
   padding-left: 20px;
-  background-color: $dark-gray-4;
   border-radius: 5px;
   position: relative;
   cursor: pointer;
   @include transition-slow;
-  color: $gray-5;
+  background-color: $gray-1;
 
   &::after {
     color: $gray-5;
     position: absolute;
-    top: 50%;
+    top: 47%;
     right: 15px;
     display: inline-block;
     width: 0;
@@ -31,11 +30,29 @@
   }
 
   &:hover {
-    color: $white;
+    color: $primary;
 
     &::after,
     .icon {
+      color: $primary;
+    }
+  }
+
+  &Gray {
+    background-color: $white;
+  }
+
+  &Dark {
+    background-color: $dark-gray-4;
+    color: $gray-5;
+
+    &:hover {
       color: $white;
+
+      &::after,
+      .icon {
+        color: $white;
+      }
     }
   }
 }
@@ -46,9 +63,10 @@
 }
 
 .icon {
+  font-size: rem(18);
   margin-right: rem(6);
   color: $gray-5;
   position: relative;
-  bottom: -0.14rem;
+  bottom: -3px;
   @include transition-slow;
 }

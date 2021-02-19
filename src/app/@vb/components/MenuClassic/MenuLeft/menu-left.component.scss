@@ -28,7 +28,7 @@
     height: 64px;
     display: flex;
     align-items: center;
-    padding: 0 rem(15) 0 rem(28);
+    padding: 0 rem(20) 0 rem(24);
 
     .logo {
       display: flex;
@@ -37,9 +37,50 @@
       height: rem(24);
       white-space: nowrap;
       width: 100%;
+
+      svg {
+        margin-right: rem(6);
+        height: rem(30);
+        width: rem(30);
+        path:nth-child(1) {
+          stroke: $primary;
+          fill: $primary;
+          stroke-width: 1px;
+          animation: logoAnimate 6s ease-in-out infinite;
+        }
+        path:nth-child(2) {
+          stroke: $primary;
+          fill: $primary;
+          stroke-width: 1px;
+          animation: logoAnimate 6s ease-in-out infinite;
+          animation-delay: 2s;
+        }
+        path:nth-child(3) {
+          stroke: $primary;
+          fill: $primary;
+          stroke-width: 1px;
+          animation: logoAnimate 6s ease-in-out infinite;
+          animation-delay: 4s;
+        }
+
+        @keyframes logoAnimate {
+          0% {
+            stroke: $primary;
+            fill: $primary;
+          }
+          50% {
+            stroke: #1ad697;
+            fill: #1ad697;
+          }
+          100% {
+            stroke: $primary;
+            fill: $primary;
+          }
+        }
+      }
     }
     .name {
-      font-size: rem(20);
+      font-size: rem(18);
       font-weight: 700;
       color: $black;
       white-space: nowrap;
@@ -49,8 +90,8 @@
       display: block;
     }
     .descr {
-      margin-left: rem(11);
-      padding-left: rem(11);
+      margin-left: rem(13);
+      padding-left: rem(13);
       height: rem(38);
       line-height: rem(38);
       border-left: 1px solid $gray-2;

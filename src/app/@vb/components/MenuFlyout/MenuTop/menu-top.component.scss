@@ -5,7 +5,7 @@
 
   @media (max-width: $sm-max-width) {
     position: fixed;
-    z-index: 997;
+    z-index: 1100;
     top: 0;
     left: 0;
     bottom: 0;
@@ -30,7 +30,7 @@
     &__outer {
       @media (max-width: $sm-max-width) {
         position: fixed;
-        z-index: 1000;
+        z-index: 999;
         top: 0;
         height: 100%;
         flex: 0 0 240px;
@@ -150,24 +150,55 @@
     min-width: rem(200);
     &__letter {
       float: left;
-      display: flex;
-      width: 35px;
-      height: 35px;
-      border-radius: 10px;
-      align-items: center;
-      justify-content: center;
-      margin-right: 0.35714rem;
-      font-weight: 700;
-      font-size: 1.5rem;
-      color: $white;
-      border: 4px solid $white;
-      padding-bottom: rem(2);
+
+      svg {
+        margin-right: rem(6);
+        height: rem(30);
+        width: rem(30);
+        path:nth-child(1) {
+          stroke: $primary;
+          fill: $primary;
+          stroke-width: 1px;
+          animation: logoAnimate 6s ease-in-out infinite;
+        }
+        path:nth-child(2) {
+          stroke: $primary;
+          fill: $primary;
+          stroke-width: 1px;
+          animation: logoAnimate 6s ease-in-out infinite;
+          animation-delay: 2s;
+        }
+        path:nth-child(3) {
+          stroke: $primary;
+          fill: $primary;
+          stroke-width: 1px;
+          animation: logoAnimate 6s ease-in-out infinite;
+          animation-delay: 4s;
+        }
+
+        @keyframes logoAnimate {
+          0% {
+            stroke: $primary;
+            fill: $primary;
+          }
+          50% {
+            stroke: #1ad697;
+            fill: #1ad697;
+          }
+          100% {
+            stroke: $primary;
+            fill: $primary;
+          }
+        }
+      }
     }
     &__name {
-      font-weight: 900;
+      font-weight: 700;
       color: $white;
-      font-size: 21px;
+      font-size: rem(18);
       margin-left: rem(40);
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     &__descr {
       color: $gray-4;
@@ -175,6 +206,9 @@
       font-size: 12px;
       text-transform: uppercase;
       letter-spacing: 1px;
+      max-width: calc(100% - 50px);
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 

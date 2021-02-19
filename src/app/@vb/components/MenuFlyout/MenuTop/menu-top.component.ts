@@ -23,6 +23,7 @@ import * as Reducers from 'src/app/store/reducers'
 })
 export class MenuFlyoutTopComponent implements OnInit {
   logo: string
+  version: string
   description: string
   menuData: any = []
   isMobileView: boolean
@@ -53,6 +54,7 @@ export class MenuFlyoutTopComponent implements OnInit {
     this.menuService.getMenuData().subscribe(menuData => (this.menuData = menuData))
     this.store.pipe(select(Reducers.getSettings)).subscribe(state => {
       this.logo = state.logo
+      this.version = state.version
       this.description = state.description
       this.isMobileView = state.isMobileView
       this.isMobileMenuOpen = state.isMobileMenuOpen

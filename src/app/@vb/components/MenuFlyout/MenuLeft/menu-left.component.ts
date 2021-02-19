@@ -23,6 +23,7 @@ import * as Reducers from 'src/app/store/reducers'
 })
 export class MenuFlyoutLeftComponent implements OnInit {
   logo: string
+  version: string
   description: string
   menuData: any = []
   isMobileView: boolean
@@ -31,7 +32,7 @@ export class MenuFlyoutLeftComponent implements OnInit {
   isMenuUnfixed: boolean
   isMenuShadow: boolean
   isSidebarOpen: boolean
-  menuType: string
+  flyoutMenuType: string
   menuColor: string
   flyoutMenuColor: string
   menuLayoutType: string
@@ -53,19 +54,22 @@ export class MenuFlyoutLeftComponent implements OnInit {
     this.menuService.getMenuData().subscribe(menuData => (this.menuData = menuData))
     this.store.pipe(select(Reducers.getSettings)).subscribe(state => {
       this.logo = state.logo
+      this.version = state.version
       this.description = state.description
       this.isMobileView = state.isMobileView
       this.isMobileMenuOpen = state.isMobileMenuOpen
       this.isMenuCollapsed = state.isMenuCollapsed
       this.isMenuUnfixed = state.isMenuUnfixed
       this.isMenuShadow = state.isMenuShadow
-      this.menuType = state.menuType
+      this.flyoutMenuType = state.flyoutMenuType
       this.menuColor = state.menuColor
       this.flyoutMenuColor = state.flyoutMenuColor
       this.menuLayoutType = state.menuLayoutType
       this.isSidebarOpen = state.isSidebarOpen
       this.flyoutActive =
-        (state.menuType === 'flyout' || state.menuType === 'compact' || state.isMenuCollapsed) &&
+        (state.flyoutMenuType === 'flyout' ||
+          state.flyoutMenuType === 'compact' ||
+          state.isMenuCollapsed) &&
         !state.isMobileView
     })
     this.setActiveItems(this.router.url)

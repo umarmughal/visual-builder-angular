@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 import { MenuService } from 'src/app/services/menu'
+import { select, Store } from '@ngrx/store'
+import * as Reducers from 'src/app/store/reducers'
 
 @Component({
   selector: 'vb-menu-simply-pages',
@@ -8,10 +10,14 @@ import { MenuService } from 'src/app/services/menu'
 })
 export class MenuSimplyPagesComponent implements OnInit {
   menuData: any = []
+  menuColor: string
 
-  constructor(private menuService: MenuService) {}
+  constructor(private menuService: MenuService, private store: Store<any>) {}
 
   ngOnInit() {
     this.menuService.getMenuData().subscribe(menuData => (this.menuData = menuData))
+    this.store.pipe(select(Reducers.getSettings)).subscribe(state => {
+      this.menuColor = state.menuColor
+    })
   }
 }

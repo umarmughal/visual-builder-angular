@@ -1,5 +1,9 @@
 <div>
-  <div nz-dropdown nzTrigger="click" class="dropdown" [nzDropdownMenu]="menu">
+  <div nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu" [ngClass]="{
+    'dropdown': true,
+    'dropdownDark': menuColor === 'dark',
+    'dropdownGray': menuColor === 'gray'
+  }">
     <i class="icon fe fe-menu mr-2"></i>
     Pages
   </div>

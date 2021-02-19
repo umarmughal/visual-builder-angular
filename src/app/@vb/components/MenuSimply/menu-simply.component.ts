@@ -9,14 +9,16 @@ import * as Reducers from 'src/app/store/reducers'
 })
 export class MenuSimplyComponent implements OnInit {
   logo: string
-  description: string
+  version: string
+  menuColor: string
 
   constructor(private store: Store<any>) {}
 
   ngOnInit() {
     this.store.pipe(select(Reducers.getSettings)).subscribe(state => {
       this.logo = state.logo
-      this.description = state.description
+      this.version = state.version
+      this.menuColor = state.menuColor
     })
   }
 }
