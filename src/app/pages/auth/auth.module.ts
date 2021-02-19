@@ -3,6 +3,7 @@ import { SharedModule } from 'src/app/shared.module'
 import { AuthRouterModule } from './auth-routing.module'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { ComponentsModule } from 'src/app/@vb/components/components.module'
+import { WidgetsComponentsModule } from 'src/app/@vb/widgets/widgets-components.module'
 
 // system pages
 import { LoginPage } from './login/login.component'
@@ -22,7 +23,14 @@ const COMPONENTS = [
 ]
 
 @NgModule({
-  imports: [SharedModule, AuthRouterModule, FormsModule, ReactiveFormsModule, ComponentsModule],
+  imports: [
+    SharedModule,
+    AuthRouterModule,
+    FormsModule,
+    ReactiveFormsModule,
+    ComponentsModule,
+    WidgetsComponentsModule,
+  ],
   declarations: [...COMPONENTS],
 })
 export class AuthModule {}
