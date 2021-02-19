@@ -18,6 +18,7 @@ export class LayoutAuthComponent {
   isBorderless: Boolean
   authPagesColor: String
   routerAnimation: String
+  date = new Date().getFullYear()
 
   constructor(private store: Store<any>) {
     this.store.pipe(select(Reducers.getSettings)).subscribe(state => {

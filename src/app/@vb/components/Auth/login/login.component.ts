@@ -18,8 +18,8 @@ export class LoginComponent {
 
   constructor(private fb: FormBuilder, private store: Store<any>) {
     this.form = fb.group({
-      email: ['demo@sellpixels.com', [Validators.required, Validators.minLength(4)]],
-      password: ['demo123', [Validators.required]],
+      email: ['demo@visualbuilder.cloud', [Validators.required, Validators.minLength(4)]],
+      password: ['VisualBuilder', [Validators.required]],
     })
     this.store.pipe(select(Reducers.getSettings)).subscribe(state => {
       this.logo = state.logo

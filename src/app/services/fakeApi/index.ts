@@ -14,8 +14,8 @@ const fakeJwtToken =
 const users = [
   {
     id: 1,
-    email: 'demo@sellpixels.com',
-    password: 'demo123',
+    email: 'demo@visualbuilder.cloud',
+    password: 'VisualBuilder',
     name: 'Tom Jones',
     avatar: '',
     role: 'admin',

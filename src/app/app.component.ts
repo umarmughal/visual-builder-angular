@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
   _theme: String
   _version: String
   logo: String
-  pageTitle: String
+  pageTitle: String = ''
   firstTouch: boolean = false
 
   constructor(
