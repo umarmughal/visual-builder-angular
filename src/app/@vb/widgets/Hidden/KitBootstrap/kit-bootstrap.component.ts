@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'vb-app-partials-1',
-  templateUrl: './1.component.html',
-  styleUrls: ['./1.component.scss'],
+  selector: 'vb-hidden-kit-bootstrap',
+  templateUrl: './kit-bootstrap.component.html',
+  styleUrls: ['./kit-bootstrap.component.scss'],
 })
-export class VbChart1Component implements OnInit {
+export class VbHiddenKitBootstrapComponent implements OnInit {
   constructor() {}
   ngOnInit() {}
 }

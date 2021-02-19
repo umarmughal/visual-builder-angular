@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'vb-app-partials-1',
-  templateUrl: './1.component.html',
-  styleUrls: ['./1.component.scss'],
+  selector: 'vb-headers-card-header-tabbed',
+  templateUrl: './card-header-tabbed.component.html',
+  styleUrls: ['./card-header-tabbed.component.scss'],
 })
-export class VbChart1Component implements OnInit {
+export class VbHeadersCardHeaderTabbedComponent implements OnInit {
   constructor() {}
   ngOnInit() {}
 }

@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'vb-app-partials-1',
-  templateUrl: './1.component.html',
-  styleUrls: ['./1.component.scss'],
+  selector: 'vb-app-partials-jira-agile-board',
+  templateUrl: './jira-agile-board.component.html',
+  styleUrls: ['./jira-agile-board.component.scss'],
 })
-export class VbChart1Component implements OnInit {
+export class VbAppPartialsJiraAgileBoardComponent implements OnInit {
   constructor() {}
   ngOnInit() {}
 }

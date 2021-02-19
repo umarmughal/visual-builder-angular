@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'vb-app-partials-1',
-  templateUrl: './1.component.html',
-  styleUrls: ['./1.component.scss'],
+  selector: 'vb-crypto-crypto-history.',
+  templateUrl: './crypto-history.component.html',
+  styleUrls: ['./crypto-history.component.scss'],
 })
-export class VbChart1Component implements OnInit {
+export class VbCryptoCryptoHistoryComponent implements OnInit {
   constructor() {}
   ngOnInit() {}
 }

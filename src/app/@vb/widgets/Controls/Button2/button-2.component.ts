@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'vb-app-partials-1',
-  templateUrl: './1.component.html',
-  styleUrls: ['./1.component.scss'],
+  selector: 'vb-controls-button-2',
+  templateUrl: './button-2.component.html',
+  styleUrls: ['./button-2.component.scss'],
 })
-export class VbChart1Component implements OnInit {
+export class VbControlsButton2Component implements OnInit {
   constructor() {}
   ngOnInit() {}
 }

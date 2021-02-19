@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'vb-app-partials-1',
-  templateUrl: './1.component.html',
-  styleUrls: ['./1.component.scss'],
+  selector: 'vb-tables-bootstrap-8',
+  templateUrl: './8.component.html',
+  styleUrls: ['./8.component.scss'],
 })
-export class VbChart1Component implements OnInit {
+export class VbTablesBootstrap8Component implements OnInit {
   constructor() {}
   ngOnInit() {}
 }

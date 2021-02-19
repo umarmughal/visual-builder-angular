@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'vb-app-partials-1',
-  templateUrl: './1.component.html',
-  styleUrls: ['./1.component.scss'],
+  selector: 'vb-app-partials-wp-post',
+  templateUrl: './wp-post.component.html',
+  styleUrls: ['./wp-post.component.scss'],
 })
-export class VbChart1Component implements OnInit {
+export class VbAppPartialsWpPostComponent implements OnInit {
   constructor() {}
   ngOnInit() {}
 }
