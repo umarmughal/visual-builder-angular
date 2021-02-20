@@ -1,18 +1,25 @@
 <div class="subbar">
-  <ul class="breadcrumbList mr-4">
+  <ul class="breadcrumbsList mr-4">
     <li class="breadcrumbItem">
       <a href="#" class="breadcrumbLink">
         Main
       </a>
     </li>
-    <li class="breadcrumbItem">
-      <a href="#" class="breadcrumbLink breadcrumbLink__current">
-        Dashboard
-      </a>
-    </li>
+    <ng-container *ngFor="let item of breadcrumbs; let last = last;">
+      <li *ngIf="!last" class="breadcrumbItem">
+        <span class="breadcrumbLink">
+          {{ item.title }}
+        </span>
+      </li>
+      <li *ngIf="last" class="breadcrumbItem">
+        <span class="breadcrumbLink breadcrumbLink__current">
+          {{ item.title }}
+        </span>
+      </li>
+    </ng-container>
   </ul>
   <div class="divider mr-4 d-none d-xl-block"></div>
-  <p class="color-gray-4 text-uppercase font-size-18 mb-0 mr-4 d-none d-xl-block">
+  <p class="color-gray-4 text-uppercase font-size-16 mb-0 mr-4 d-none d-xl-block">
     INV-00125
   </p>
   <button type="button" class="btn btn-primary btn-with-addon mr-auto text-nowrap d-none d-md-block">
