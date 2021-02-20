@@ -34,7 +34,7 @@ export class SidebarComponent {
   togglePreselectedThemes() {
     this.store.dispatch(
       new SettingsActions.SetStateAction({
-        isSidebarOpen: !this.settings.isSidebarOpen,
+        isPreselectedOpen: !this.settings.isPreselectedOpen,
       }),
     )
   }

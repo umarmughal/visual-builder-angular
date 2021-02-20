@@ -61,6 +61,14 @@ export function reducer(state = initialState, action: actions.Actions): object {
       const key = Object.keys(action.payload)[0]
       store.set(`app.settings.${key}`, action.payload[key])
       return { ...state, ...action.payload }
+    case actions.CHANGE_SETTING_BULK:
+      const settings = {}
+      Object.keys(action.payload).forEach(key => {
+        store.set(`app.settings.${key}`, action.payload[key])
+        settings[key] = action.payload[key]
+      })
+      console.log({ ...action.payload })
+      return { ...state, ...action.payload }
     default:
       return state
   }

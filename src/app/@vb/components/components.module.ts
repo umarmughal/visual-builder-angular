@@ -32,6 +32,7 @@ import { BreadcrumbsComponent } from './Breadcrumbs/breadcrumbs.component'
 import { Breadcrumbs2Component } from './Breadcrumbs2/breadcrumbs.component'
 import { SidebarComponent } from './Sidebar/sidebar.component'
 import { SupportChatComponent } from './SupportChat/support-chat.component'
+import { VariantsComponent } from './Variants/variants.component'
 
 import { ForgotPasswordComponent } from './Auth/forgot-password/forgot-password.component'
 import { LockscreenComponent } from './Auth/lockscreen/lockscreen.component'
@@ -69,6 +70,7 @@ const COMPONENTS = [
   Breadcrumbs2Component,
   SidebarComponent,
   SupportChatComponent,
+  VariantsComponent,
 
   ForgotPasswordComponent,
   LockscreenComponent,
