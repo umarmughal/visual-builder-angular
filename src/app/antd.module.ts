@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core'
 
 import { IconDefinition } from '@ant-design/icons-angular'
 import * as AllIcons from '@ant-design/icons-angular/icons'
-import { NZ_ICONS } from 'ng-zorro-antd'
 
 import { NzButtonModule } from 'ng-zorro-antd/button'
 import { NzIconModule } from 'ng-zorro-antd/icon'
@@ -66,12 +65,19 @@ import { NzBackTopModule } from 'ng-zorro-antd/back-top'
 import { NzDividerModule } from 'ng-zorro-antd/divider'
 
 /**
+ * AntDesign Icons
+ */
+const antDesignIcons = AllIcons as {
+  [key: string]: IconDefinition
+}
+const icons: IconDefinition[] = Object.keys(antDesignIcons).map(key => antDesignIcons[key])
+
+/**
  * AntDesign Components
  */
 
 const MODULES = [
   NzButtonModule,
-  NzIconModule,
   NzGridModule,
   NzLayoutModule,
   NzSpaceModule,
@@ -132,17 +138,8 @@ const MODULES = [
   NzDividerModule,
 ]
 
-/**
- * AntDesign Icons
- */
-const antDesignIcons = AllIcons as {
-  [key: string]: IconDefinition
-}
-const icons: IconDefinition[] = Object.keys(antDesignIcons).map(key => antDesignIcons[key])
-
 @NgModule({
-  imports: [...MODULES],
-  providers: [{ provide: NZ_ICONS, useValue: icons }],
-  exports: [...MODULES],
+  imports: [...MODULES, NzIconModule.forRoot(icons)],
+  exports: [...MODULES, NzIconModule],
 })
 export class AntdModule {}

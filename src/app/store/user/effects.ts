@@ -5,7 +5,7 @@ import { Action, select, Store } from '@ngrx/store'
 import { Observable, of, empty, from } from 'rxjs'
 import { map, switchMap, catchError, withLatestFrom, concatMap } from 'rxjs/operators'
 import store from 'store'
-import { NzNotificationService } from 'ng-zorro-antd'
+import { NzNotificationService } from 'ng-zorro-antd/notification'
 
 import * as Reducers from 'src/app/store/reducers'
 import * as UserActions from './actions'

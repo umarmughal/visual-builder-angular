@@ -52,6 +52,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes, {
       useHash: true,
       preloadingStrategy: AppPreloader,
+      relativeLinkResolution: 'legacy',
     }),
     LayoutsModule,
   ],
