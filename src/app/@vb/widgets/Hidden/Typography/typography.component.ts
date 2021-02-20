@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'vb-hidden-typographys',
-  templateUrl: './typographys.component.html',
+  templateUrl: './typography.component.html',
   styleUrls: ['./typography.component.scss'],
 })
 export class VbHiddenTypographyComponent implements OnInit {
