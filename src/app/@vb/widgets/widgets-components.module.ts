@@ -6,6 +6,9 @@ import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar'
 import { ChartistModule } from 'ng-chartist'
 import { ChartModule } from 'angular2-chartjs'
 import { UsMapModule } from 'angular-us-map'
+import { QuillModule } from 'ngx-quill'
+import { SortablejsModule } from 'ngx-sortablejs'
+import { NestableModule } from 'ngx-nestable'
 
 import { VbAppPartialsCalendarComponent } from './AppPartials/Calendar/calendar.component'
 import { VbAppPartialsDoHeadComponent } from './AppPartials/DoHead/do-head.component'
@@ -511,6 +514,9 @@ const COMPONENTS = [
     ChartModule,
     CommonModule,
     UsMapModule,
+    QuillModule.forRoot(),
+    SortablejsModule,
+    NestableModule,
   ],
   declarations: [...COMPONENTS],
   exports: [...COMPONENTS],
