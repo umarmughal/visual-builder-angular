@@ -3,7 +3,7 @@ declare var require: any
 const data: any = require('./data.json')
 
 @Component({
-  selector: 'vb-table-6',
+  selector: 'vb-widgets-tables-6',
   templateUrl: './6.component.html',
   styleUrls: ['./6.component.scss'],
 })

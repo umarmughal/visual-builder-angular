@@ -3,7 +3,7 @@ declare var require: any
 const data: any = require('./data.json')
 
 @Component({
-  selector: 'vb-table-8',
+  selector: 'vb-widgets-tables-8',
   templateUrl: './8.component.html',
 })
 export class VbTable8Component implements OnInit {

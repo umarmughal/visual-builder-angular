@@ -214,6 +214,13 @@ import { VbList20Component } from './WidgetsLists/20/20.component'
 import { VbList21Component } from './WidgetsLists/21/21.component'
 import { VbList21v1Component } from './WidgetsLists/21v1/21v1.component'
 import { VbList21v2Component } from './WidgetsLists/21v2/21v2.component'
+import { VbList22Component } from './WidgetsLists/22/22.component'
+import { VbList23Component } from './WidgetsLists/23/23.component'
+import { VbList24Component } from './WidgetsLists/24/24.component'
+import { VbList25Component } from './WidgetsLists/25/25.component'
+import { VbList26Component } from './WidgetsLists/26/26.component'
+import { VbList27Component } from './WidgetsLists/27/27.component'
+import { VbList28Component } from './WidgetsLists/28/28.component'
 
 import { VbChart1Component } from './WidgetsCharts/1/1.component'
 import { VbChart2Component } from './WidgetsCharts/2/2.component'
@@ -454,6 +461,13 @@ const COMPONENTS = [
   VbList21Component,
   VbList21v1Component,
   VbList21v2Component,
+  VbList22Component,
+  VbList23Component,
+  VbList24Component,
+  VbList25Component,
+  VbList26Component,
+  VbList27Component,
+  VbList28Component,
 
   VbChart1Component,
   VbChart2Component,

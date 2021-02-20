@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'vb-list-11',
+  selector: 'vb-widgets-lists-11',
   templateUrl: './11.component.html',
   styleUrls: ['./11.component.scss'],
 })

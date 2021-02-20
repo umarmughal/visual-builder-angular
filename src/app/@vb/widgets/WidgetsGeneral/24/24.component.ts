@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'vb-general-24',
+  selector: 'vb-widgets-general-24',
   templateUrl: './24.component.html',
 })
 export class VbGeneral24Component implements OnInit {

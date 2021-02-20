@@ -4,7 +4,7 @@ declare var require: any
 const data: any = require('./data.json')
 
 @Component({
-  selector: 'vb-chart-10',
+  selector: 'vb-widgets-charts-10',
   templateUrl: './10.component.html',
   styleUrls: ['./10.component.scss'],
 })

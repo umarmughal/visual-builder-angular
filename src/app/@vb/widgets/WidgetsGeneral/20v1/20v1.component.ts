@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'vb-general-20v1',
+  selector: 'vb-widgets-general-20v1',
   templateUrl: './20v1.component.html',
   styleUrls: ['./20v1.component.scss'],
 })

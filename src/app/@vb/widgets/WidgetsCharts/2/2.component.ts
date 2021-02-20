@@ -4,7 +4,7 @@ declare var require: any
 const data: any = require('./data.json')
 
 @Component({
-  selector: 'vb-chart-2',
+  selector: 'vb-widgets-charts-2',
   templateUrl: './2.component.html',
 })
 export class VbChart2Component implements OnInit {

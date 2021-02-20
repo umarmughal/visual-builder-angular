@@ -1,7 +1,7 @@
 import { Component, Input, OnChanges } from '@angular/core'
 
 @Component({
-  selector: 'vb-general-16',
+  selector: 'vb-widgets-general-16',
   templateUrl: './16.component.html',
   styleUrls: ['./16.component.scss'],
 })

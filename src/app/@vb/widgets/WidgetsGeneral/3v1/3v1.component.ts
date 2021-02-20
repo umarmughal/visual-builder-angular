@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'vb-general-3v1',
+  selector: 'vb-widgets-general-3v1',
   templateUrl: './3v1.component.html',
 })
 export class VbGeneral3v1Component implements OnInit {
