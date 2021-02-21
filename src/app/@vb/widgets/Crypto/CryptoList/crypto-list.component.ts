@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core'
   styleUrls: ['./crypto-list.component.scss'],
 })
 export class VbCryptoCryptoListComponent implements OnInit {
+  selectedItem: String = 'btc'
   constructor() {}
   ngOnInit() {}
 }

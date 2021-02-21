@@ -12,6 +12,9 @@ import { NestableModule } from 'ngx-nestable'
 import { NgApexchartsModule } from 'ng-apexcharts'
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 
+import { AntdUIKitExamplesModule } from './Hidden/KitAntd/examples/antd-expamples.module'
+import { BootstrapUIKitExamplesModule } from './Hidden/KitBootstrap/examples/bootstrap-expamples.module'
+
 import { VbAppPartialsCalendarComponent } from './AppPartials/Calendar/calendar.component'
 import { VbAppPartialsDoHeadComponent } from './AppPartials/DoHead/do-head.component'
 import { VbAppPartialsDoImageComponent } from './AppPartials/DoImage/do-image.component'
@@ -521,6 +524,8 @@ const COMPONENTS = [
     NestableModule,
     NgApexchartsModule,
     NgbModule,
+    AntdUIKitExamplesModule, // antd examples (src/app/@vb/widgets/Hidden/KitAntd/examples)
+    BootstrapUIKitExamplesModule, // boostrap examples (src/app/@vb/widgets/Hidden/KitBootstrap/examples)
   ],
   declarations: [...COMPONENTS],
   exports: [...COMPONENTS],

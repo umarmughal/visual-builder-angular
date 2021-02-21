@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core'
+const data: any = require('./data.json')
 
 @Component({
   selector: 'vb-hidden-icons-linearicons-free',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core'
   styleUrls: ['./icons-linearicons-free.component.scss'],
 })
 export class VbHiddenIconsLineariconsFreeComponent implements OnInit {
+  icons = data
+
   constructor() {}
   ngOnInit() {}
 }
