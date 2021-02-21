@@ -27,7 +27,7 @@ export const initialState: object = {
     isPreselectedOpen: false,
     preselectedVariant: 'default',
     menuLayoutType: 'left',
-    routerAnimation: 'slideFadeinUp',
+    routerAnimation: 'slide-fadein-up',
     menuColor: 'gray',
     authPagesColor: 'gray',
     isAuthTopbar: true,

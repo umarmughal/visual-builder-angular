@@ -17,7 +17,7 @@ export class LayoutAuthComponent {
   isSquaredBorders: Boolean
   isBorderless: Boolean
   authPagesColor: String
-  routerAnimation: String
+  routerAnimation: string
   date = new Date().getFullYear()
 
   constructor(private store: Store<any>) {
@@ -29,12 +29,17 @@ export class LayoutAuthComponent {
       this.isBorderless = state.isBorderless
       this.authPagesColor = state.authPagesColor
       this.routerAnimation = state.routerAnimation
-      this.routerAnimation = state.routerAnimation
     })
   }
 
   routeAnimation(outlet: RouterOutlet, animation: string) {
-    if (animation === this.routerAnimation) {
+    const mapAnimation = {
+      'slide-fadein-up': 'slideFadeinUp',
+      'slide-fadein-right': 'slideFadeinRight',
+      fadein: 'zoomFadein',
+      'zoom-fadein': 'fadein',
+    }
+    if (animation === mapAnimation[this.routerAnimation]) {
       return outlet.isActivated && outlet.activatedRoute.routeConfig.path
     }
   }

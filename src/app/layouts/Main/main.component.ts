@@ -81,7 +81,13 @@ export class LayoutMainComponent implements OnInit {
   }
 
   routeAnimation(outlet: RouterOutlet, animation: string) {
-    if (animation === this.settings.routerAnimation) {
+    const mapAnimation = {
+      'slide-fadein-up': 'slideFadeinUp',
+      'slide-fadein-right': 'slideFadeinRight',
+      fadein: 'zoomFadein',
+      'zoom-fadein': 'fadein',
+    }
+    if (animation === mapAnimation[this.settings.routerAnimation]) {
       return outlet.isActivated && outlet.activatedRoute.routeConfig.path
     }
   }
