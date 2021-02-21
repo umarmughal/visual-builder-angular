@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, OnInit, Input } from '@angular/core'
 
 @Component({
   selector: 'vb-headers-card-header-tabbed-4',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core'
   styleUrls: ['./card-header-tabbed-4.component.scss'],
 })
 export class VbHeadersCardHeaderTabbed4Component implements OnInit {
+  @Input() data: any = {
+    title: 'Bold border',
+  }
+
   constructor() {}
   ngOnInit() {}
 }

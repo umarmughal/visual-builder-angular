@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, OnInit, Input } from '@angular/core'
 
 @Component({
   selector: 'vb-headers-heading',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core'
   styleUrls: ['./heading.component.scss'],
 })
 export class VbHeadersHeadingComponent implements OnInit {
+  @Input() data: any = {
+    title: 'Basic page header',
+  }
+
   constructor() {}
   ngOnInit() {}
 }

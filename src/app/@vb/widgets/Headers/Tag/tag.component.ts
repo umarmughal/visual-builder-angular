@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, OnInit, Input } from '@angular/core'
 
 @Component({
   selector: 'vb-headers-tag',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core'
   styleUrls: ['./tag.component.scss'],
 })
 export class VbHeadersTagComponent implements OnInit {
+  @Input() data: any = {
+    title: 'Tag',
+  }
+
   constructor() {}
   ngOnInit() {}
 }

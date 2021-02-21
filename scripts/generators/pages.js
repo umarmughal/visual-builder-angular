@@ -51,8 +51,7 @@ const widgetTpl = (items) => {
   let widgets = ''
   items && items.forEach((widget) => {
     const [folder, name] = widget.name.split('-')
-    // const props = widget.data ? ` [data]="${JSON.stringify(widget.data).replace(/"/ig, '\'')}"` : ''
-    const props = widget.data ? `` : ''
+    const props = widget.data ? ` [data]="${JSON.stringify(widget.data).replace(/"/ig, '\'')}"` : ''
     const kebabCase = (string) => {
       return string
         .replace(/([a-z])([A-Z])/g, "$1-$2")

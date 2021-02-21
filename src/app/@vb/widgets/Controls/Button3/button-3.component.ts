@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, OnInit, Input } from '@angular/core'
 
 @Component({
   selector: 'vb-controls-button-3',
@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core'
   styleUrls: ['./button-3.component.scss'],
 })
 export class VbControlsButton3Component implements OnInit {
+  @Input() data: any = {
+    mainTitle: 'Update',
+    mainType: 'primary',
+    additionalTitle: 'Cancel',
+  }
+
   constructor() {}
   ngOnInit() {}
 }
