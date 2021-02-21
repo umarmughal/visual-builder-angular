@@ -25,6 +25,7 @@
               "@ant-design/icons-angular",
               "@ant-design/icons-angular/icons"
             ],
+            "aot": true,
             "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",

@@ -9,12 +9,14 @@ import { UsMapModule } from 'angular-us-map'
 import { QuillModule } from 'ngx-quill'
 import { SortablejsModule } from 'ngx-sortablejs'
 import { NestableModule } from 'ngx-nestable'
+import { NgApexchartsModule } from 'ng-apexcharts'
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 
 import { VbAppPartialsCalendarComponent } from './AppPartials/Calendar/calendar.component'
 import { VbAppPartialsDoHeadComponent } from './AppPartials/DoHead/do-head.component'
 import { VbAppPartialsDoImageComponent } from './AppPartials/DoImage/do-image.component'
 import { VbAppPartialsDoPlanComponent } from './AppPartials/DoPlan/do-plan.component'
-import { VbAppPartialsDoServerComponent } from './AppPartials/DoServer/do-sever.component'
+import { VbAppPartialsDoServerComponent } from './AppPartials/DoServer/do-server.component'
 import { VbAppPartialsEcommerceProductComponent } from './AppPartials/EcommerceProduct/ecommerce-product.component'
 import { VbAppPartialsGalleryComponent } from './AppPartials/Gallery/gallery.component'
 import { VbAppPartialsGithubDescrComponent } from './AppPartials/GithubDescr/github-descr.component'
@@ -517,6 +519,8 @@ const COMPONENTS = [
     QuillModule.forRoot(),
     SortablejsModule,
     NestableModule,
+    NgApexchartsModule,
+    NgbModule,
   ],
   declarations: [...COMPONENTS],
   exports: [...COMPONENTS],

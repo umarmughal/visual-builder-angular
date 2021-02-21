@@ -67,7 +67,6 @@ export function reducer(state = initialState, action: actions.Actions): object {
         store.set(`app.settings.${key}`, action.payload[key])
         settings[key] = action.payload[key]
       })
-      console.log({ ...action.payload })
       return { ...state, ...action.payload }
     default:
       return state
